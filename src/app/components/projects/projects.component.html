@@ -1,0 +1,13 @@
+<section class="projects">
+    <span>My Projects</span>
+    <div class="projects-container">
+      @for (project of projects; track project.title) {
+        <app-project-card 
+          [title]="project.title"
+          [details]="project.details"
+          [image]="project.image"
+          [link]="project.link">
+        </app-project-card>
+      }
+    </div>
+  </section>

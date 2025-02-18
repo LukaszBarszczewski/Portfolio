@@ -1,0 +1,10 @@
+<div class="project-card">
+    <img [src]="image" [alt]="title">
+    <h3>{{ title }}</h3>
+    <ul>
+      @for (detail of details; track detail) {
+        <li>{{ detail }}</li>
+      }
+    </ul>
+    <a [href]="link" target="_blank">test</a>
+  </div>
