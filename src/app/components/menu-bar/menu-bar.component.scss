@@ -1,14 +1,14 @@
 .menu-bar {
     width: 100vw;
     background-color: rgba(137, 188, 217, 1);
-}
 
-.menu-system {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 109px;
-}
+    .menu-system {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 109px;
+    }
 
-.menu-button {
-    font-size: 26px;
+    .menu-button {
+        font-size: 26px;
+    }
 }
