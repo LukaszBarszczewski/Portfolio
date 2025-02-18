@@ -1,10 +1,22 @@
 <div class="project-card">
-    <img [src]="image" [alt]="title">
+
+  <div class="poject-description">
     <h3>{{ title }}</h3>
     <ul>
       @for (detail of details; track detail) {
-        <li>{{ detail }}</li>
+      <li>{{ detail }}</li>
       }
     </ul>
     <a [href]="link" target="_blank">test</a>
   </div>
+
+  <div class="poject-test-section">
+    <span>Technologies</span>
+    <img [src]="image" [alt]="title">
+    <section class="btn-section">
+      <button class="btn-dark">Live Test</button>
+      <button class="btn-dark">Git Hub</button>
+    </section>
+  </div>
+
+</div>

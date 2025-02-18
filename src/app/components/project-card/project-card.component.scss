@@ -1,4 +1,5 @@
 .project-card {
+  display: flex;
     width: 100%;
     max-width: 400px;
     padding: 15px;
@@ -33,5 +34,10 @@
       &:hover {
         background: #0056b3;
       }
+    }
+
+    .poject-test-section {
+      display: flex;
+      flex-direction: column;
     }
   }

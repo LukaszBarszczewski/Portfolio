@@ -11,3 +11,16 @@ body {
 .blue {
     color: rgba(137, 188, 217, 1);
 }
+
+.btn-dark {
+    border: 1px solid rgba(137, 188, 217, 1);
+    border-radius: 30px;
+    padding: 13px 30px;
+    background: none;
+    width: 134px;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(137, 188, 217, 0.2);
+    }
+}
