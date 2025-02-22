@@ -4,10 +4,13 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { WhyMeSectionComponent } from './components/why-me-section/why-me-section.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ReferencesComponent } from './components/references/references.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { MySkillsComponent } from './components/my-skills/my-skills.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeroSectionComponent, MenuBarComponent, WhyMeSectionComponent, ProjectsComponent],
+  imports: [RouterOutlet, HeroSectionComponent, MenuBarComponent, WhyMeSectionComponent, ProjectsComponent, ReferencesComponent, ContactMeComponent, MySkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

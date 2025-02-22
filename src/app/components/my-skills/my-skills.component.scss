@@ -1,0 +1,25 @@
+.my-skills-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+    .skills {
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+
+        .skills-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 340px;
+        }
+
+        .currently-learning {
+            
+        }
+    }
+}

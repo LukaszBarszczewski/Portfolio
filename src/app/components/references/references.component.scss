@@ -1,0 +1,15 @@
+.references-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 56px;
+
+    .title {
+        font-size: 32px;
+    }
+
+    .references {
+        display: flex;
+        gap: 56px;
+    }
+}
