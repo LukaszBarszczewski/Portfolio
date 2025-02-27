@@ -2,4 +2,49 @@
     <div class="headline blue">
         <span>Contact me</span>
     </div>
+
+    <section class="get-in-touch creme-white">
+        <div class="text">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente natus in, consectetur, aliquam
+                doloremque fugiat voluptatibus velit sunt quod adipisci temporibus quam accusantium nam autem iure
+                expedita. Explicabo, accusamus delectus?</span>
+        </div>
+        <div class="tel-mail">
+            <div class="icon-text">
+                <img src="assets/img/email.png" alt="Email">
+                <span>E-mail: lukasz.barszczewski&#64;yahoo.com</span>
+            </div>
+            <div class="icon-text">
+                <img src="assets/img/phone.png" alt="Phone">
+                <span>Tel: 01724342490</span>
+            </div>
+        </div>
+    </section>
+
+    <form class="contact-form">
+
+        <div class="name-and-email-inputs">
+            <div class="name-and-email">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="name-and-email">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="privacy" name="privacy" required hidden>
+            <img id="custom-checkbox" src="assets/img/checkbox-unchecked.png" alt="Checkbox">
+            <label for="privacy">I've read the privacy policy and agree to the processing of my data as
+                outlined.</label>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
 </section>
