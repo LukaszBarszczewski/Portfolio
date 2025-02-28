@@ -61,23 +61,10 @@
 
         .checkbox-container {
             display: flex;
+            flex-direction: column;
             
             input {
                 width: 16px;
-            }
-        }
-
-        button {
-            padding: 12px 24px;
-            font-size: 18px;
-            color: white;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #0056b3;
             }
         }
     }
