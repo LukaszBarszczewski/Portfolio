@@ -1,0 +1,28 @@
+footer {
+    background-color: rgba(137, 188, 217, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+
+    .legal {
+        display: flex;
+        flex-direction: column;
+        color: rgba(38, 46, 52, 1);
+
+        a {
+            text-decoration: none;
+            color: rgba(38, 46, 52, 1);
+        }
+    }
+
+    .contact-btns {
+        display: flex;
+        gap: 16px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
