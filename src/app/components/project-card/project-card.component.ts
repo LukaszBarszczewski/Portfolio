@@ -8,7 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectCardComponent {
   @Input() title: string = '';
-  @Input() details: string[] = [];
+  @Input() abouts: string = '';
+  @Input() organization: string = '';
+  @Input() groupwork: string = '';
   @Input() image: string = '';
   @Input() link: string = '#';
 }

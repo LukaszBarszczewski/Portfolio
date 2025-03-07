@@ -14,7 +14,7 @@
 
     <div class="project-cards creme-white">
       @for (project of projects; track $index) {
-      <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [details]="project.details"
+      <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [abouts]="project.abouts" [organization]="project.organization" [groupwork]="project.groupwork"
         [image]="project.image" [link]="project.link">
       </app-project-card>
       }

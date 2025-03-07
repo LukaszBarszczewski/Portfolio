@@ -1,13 +1,36 @@
 <div class="project-card">
 
-  <div class="project-description">
+  <div class="project-descriptions">
     <ul>
-      @for (detail of details; track detail) {
-      <li>
-          <p>About The Project</p>
-         <span>{{ detail }}</span>  
-      </li>
-      }
+      <section class="project-description-section gap-36">
+        <img src="assets/img/ellipse.png" alt="Ellipse">
+        <div class="project-description">
+          <p>About the project</p>
+          <li>
+            <span>{{ abouts }}</span>
+          </li>
+        </div>
+      </section>
+
+      <section class="project-description-section gap-36">
+        <img src="assets/img/ellipse.png" alt="Ellipse">
+        <div class="project-description">
+          <p>How I have organized my work process</p>
+          <li>
+            <span>{{ organization }}</span>
+          </li>
+        </div>
+      </section>
+
+      <section class="project-description-section gap-36">
+        <img src="assets/img/ellipse.png" alt="Ellipse">
+        <div class="project-description">
+          <p>My group work experience</p>
+          <li>
+            <span>{{ groupwork }}</span>
+          </li>
+        </div>
+      </section>
     </ul>
   </div>
 
