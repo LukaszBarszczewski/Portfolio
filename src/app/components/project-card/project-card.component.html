@@ -1,22 +1,23 @@
 <div class="project-card">
 
-  <div class="poject-description">
-    <h3>{{ title }}</h3>
+  <div class="project-description">
     <ul>
       @for (detail of details; track detail) {
-      <li>{{ detail }}</li>
+      <li>
+          <p>About The Project</p>
+         <span>{{ detail }}</span>  
+      </li>
       }
     </ul>
-    <a [href]="link" target="_blank">test</a>
   </div>
 
   <div class="poject-test-section">
     <span>Technologies</span>
     <img [src]="image" [alt]="title">
-    <section class="btn-section">
-      <button class="btn-dark">Live Test</button>
+    <div class="btn-section">
+      <button class="btn-light">Live Test</button>
       <button class="btn-dark">Git Hub</button>
-    </section>
+    </div>
   </div>
 
 </div>

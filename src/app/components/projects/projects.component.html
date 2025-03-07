@@ -1,15 +1,24 @@
-<section class="projects margin-80-0">
-  <div class="headline">
-    <span class="blue">My Projects</span>
-  </div>
-    <div class="projects-container">
-      @for (project of projects; track project.title) {
-        <app-project-card 
-          [title]="project.title"
-          [details]="project.details"
-          [image]="project.image"
-          [link]="project.link">
-        </app-project-card>
+<div class="headline margin-80-0">
+  <span class="blue">My Projects</span>
+</div>
+
+<section class="projects">
+
+  <div class="projects-container">
+    <div class="project-header">
+      @for (project of projects; track $index) {
+      <span [class.active]="$index === activeProjectIndex" class="project-title blue"
+        (click)="selectProject($index)">{{$index + 1}}. {{ project.title }} </span>
       }
     </div>
-  </section>
+
+    <div class="project-cards creme-white">
+      @for (project of projects; track $index) {
+      <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [details]="project.details"
+        [image]="project.image" [link]="project.link">
+      </app-project-card>
+      }
+    </div>
+
+  </div>
+</section>

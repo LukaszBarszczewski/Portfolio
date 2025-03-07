@@ -1,43 +1,39 @@
 .project-card {
   display: flex;
-    width: 100%;
-    max-width: 400px;
-    padding: 15px;
-    border-radius: 10px;
-    background: #f5f5f5;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    
-    img {
-      width: 100%;
-      border-radius: 8px;
-    }
-  
-    h3 {
-      margin-top: 10px;
-    }
-  
-    p {
-      font-size: 14px;
-      color: #666;
-    }
-  
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background: #007bff;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-  
-      &:hover {
-        background: #0056b3;
-      }
-    }
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  flex: 2 1;
+  width: 100vw;
+  padding: 15px;
+  background: #89bcd912;
 
-    .poject-test-section {
-      display: flex;
-      flex-direction: column;
+  p {
+    font-size: 28px;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 60%;
+  }
+
+  .project-test-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
     }
   }
+
+  .btn-section {
+    display: flex;
+  }
+}
