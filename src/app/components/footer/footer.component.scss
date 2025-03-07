@@ -4,6 +4,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 64px;
+    width: 93vw;
 
     .legal {
         display: flex;
@@ -23,6 +24,11 @@ footer {
         img {
             width: 30px;
             height: 30px;
+
+            &:hover {
+                background-color: white;
+                border-radius: 16px;
+            }
         }
     }
 }

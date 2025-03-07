@@ -17,7 +17,13 @@
         .location-info {
             display: flex;
             justify-content: end;
-            align-items: baseline;
+            align-items: center;
+            font-size: 30px;
+
+            img {
+                width: 74px;
+                height: 64px;
+            }
         }
 
         .about-me-text {
