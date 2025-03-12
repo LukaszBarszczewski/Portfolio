@@ -34,9 +34,16 @@
     </ul>
   </div>
 
-  <div class="poject-test-section">
+  <div class="project-test-section">
     <span>Technologies</span>
-    <img [src]="image" [alt]="title">
+
+    <div class="technologies-img">
+      <img src="assets/img/javascript.png" alt="JavaScript">
+      <img src="assets/img/html.png" alt="HTML">
+      <img src="assets/img/css.png" alt="CSS">
+    </div>
+
+    <img [style]="{ width: '450px', height: '312px' }" [src]="image" [alt]="title">
     <div class="btn-section">
       <button class="btn-light">Live Test</button>
       <button class="btn-dark">Git Hub</button>
