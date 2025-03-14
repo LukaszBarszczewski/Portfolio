@@ -44,10 +44,11 @@
       <img src="assets/img/firebase-no-txt.png" alt="Firebase">
     </div>
 
-    <img [style]="{ width: '450px', height: '312px' }" [src]="image" [alt]="title">
+    <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
+
     <div class="btn-section gap-36">
-      <button class="btn-light">Live Test</button>
-      <button class="btn-dark">Git Hub</button>
+      <button class="btn-light josefin-sans">Live Test</button>
+      <button class="btn-dark blue josefin-sans">GitHub</button>
     </div>
   </div>
 

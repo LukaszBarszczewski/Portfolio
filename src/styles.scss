@@ -1,7 +1,29 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Anta;
+    src: url(assets/fonts/Anta/Anta-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(38, 46, 52, 1);
     margin: 0;
     overflow-x: hidden;
+}
+
+.josefin-sans {
+    font-family: 'JosefinSans';
+}
+
+.anta {
+    font-family: 'Anta';
 }
 
 .d-flex-column-center {
