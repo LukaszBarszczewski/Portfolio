@@ -1,6 +1,13 @@
+@import '../../../styles.scss';
+
+
 .menu-bar {
     width: 101vw;
     background-color: rgba(137, 188, 217, 1);
+
+    @include respond(large) {
+        display: none;
+    }
 
     .menu-system {
         display: flex;

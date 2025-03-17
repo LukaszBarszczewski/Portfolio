@@ -90,3 +90,22 @@ body {
         background: rgba(248, 245, 236, 1);
     }
 }
+
+.d-none {
+    display: none;
+}
+
+// RESPONSIVENESS:
+
+$breakpoints: (
+//   small: 576px,
+  medium: 720px,
+  large: 1215px,
+  xlarge: 1280px
+);
+
+@mixin respond($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

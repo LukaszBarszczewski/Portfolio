@@ -1,7 +1,29 @@
+@import '../../../styles.scss';
+
+
 .hero-section {
     display: flex;
     align-items: center;
     margin-top: 80px;
+
+    @include respond(large) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-responsive {
+        @include respond(large) {
+            display: flex;
+            width: 80%;
+            margin-bottom: 64px;
+        }
+    }
+
+    .d-none {
+        @include respond(large) {
+            display: flex;
+        }
+    }
 
     .foto-section {
         width: 50%;
@@ -9,24 +31,54 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(large) {}
+
+        @include respond(medium) {
+            img {
+                width: 480px;
+            }
+        }
+
+        @include respond(small) {}
     }
 
     .introduction {
-        
+        width: 50%;
+        .name {
+            font-size: 88px;
+            margin-bottom: 16px;
+
+            @include respond(medium) {
+                font-size: 48px;
+            }
+        }
+
+        .function {
+            font-size: 40px;
+
+            @include respond(medium) {
+                font-size: 24px;
+            }
+        }
+
+
         .name-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+
+            
+
+            @include respond(small) {}
+        }
+
+        .logo-high-resolution {
+            @include respond(large) {
+                display: none;
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
-
