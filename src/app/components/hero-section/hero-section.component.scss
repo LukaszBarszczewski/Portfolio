@@ -11,6 +11,12 @@
         text-align: center;
     }
 
+    @include respond(medium) {
+        // margin-left: 32px;
+    }
+
+    @include respond(small) {}
+
     .logo-responsive {
         @include respond(large) {
             display: flex;
@@ -27,7 +33,6 @@
 
     .foto-section {
         width: 50%;
-        height: 610px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,17 +45,29 @@
             }
         }
 
+        @include respond(small) {
+            img {
+                width: 280px;
+            }
+        }
+
+
         @include respond(small) {}
     }
 
     .introduction {
         width: 50%;
+
         .name {
             font-size: 88px;
             margin-bottom: 16px;
 
             @include respond(medium) {
                 font-size: 48px;
+            }
+
+            @include respond(small) {
+                font-size: 32px;
             }
         }
 
@@ -59,6 +76,10 @@
 
             @include respond(medium) {
                 font-size: 24px;
+            }
+
+            @include respond(small) {
+                font-size: 16px;
             }
         }
 
@@ -70,7 +91,7 @@
             align-items: center;
             text-align: center;
 
-            
+
 
             @include respond(small) {}
         }
