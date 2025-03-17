@@ -26,12 +26,12 @@
         <div class="name-and-email-inputs">
             <div class="name-and-email blue">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required autocomplete="off">
             </div>
 
             <div class="name-and-email blue">
                 <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required autocomplete="off">
             </div>
         </div>
 
@@ -40,18 +40,16 @@
             <textarea id="message" name="message" required></textarea>
         </div>
 
-        <div class="checkbox-container creme-white" (click)="toggleCheckbox()">
-            <div>
-                <input type="checkbox" id="privacy" name="privacy" [checked]="isChecked" hidden>
-                <img id="custom-checkbox" src="assets/img/checkbox-unchecked.png" alt="Checkbox">
-                <label for="privacy">I've read the <a class="blue" href="#">privacy policy</a> and agree to the
-                    processing
-                    of my data as
-                    outlined.</label>
+        <div class="checkbox-container creme-white">
+            <div style="display: flex; align-items: center;">
+                <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState($event)">
+                <label for="privacy">
+                    I've read the <a class="blue" href="#">privacy policy</a> and agree to the processing of my data as outlined.
+                </label>
             </div>
-
+        
             <div [style]="{ display: 'flex', justifyContent: 'flex-end' }">
-                <button class="btn-dark blue josefin-sans" type="submit">Send</button>
+                <button class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">Send</button>
             </div>
         </div>
 

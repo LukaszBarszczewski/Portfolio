@@ -7,15 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
-  isChecked = false;
+  isDisabled: boolean = true;
 
-  toggleCheckbox() {
-    this.isChecked = !this.isChecked;
-  }
-
-  get checkboxImage() {
-    return this.isChecked 
-      ? 'assets/img/checkbox-checked.png' 
-      : 'assets/img/checkbox-unchecked.png';
+  updateButtonState(event: Event) {
+    this.isDisabled = !(event.target as HTMLInputElement).checked;
   }
 }
