@@ -1,9 +1,16 @@
+@import '../../../styles.scss';
+
+
 .why-me-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 80px;
+
+    @include respond(large) {
+        margin-top: 120px;
+    }
 
     .headline {
         font-size: 60px;
@@ -12,17 +19,64 @@
     .why-me-info {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
+
+        @include respond(large) {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+
+
 
         .location-info {
             display: flex;
             justify-content: end;
             align-items: center;
-            font-size: 30px;
+            font-size: 28px;
 
             img {
                 width: 74px;
                 height: 64px;
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+            }
+
+            @include respond(medium) {
+                font-size: 24px;
+            }
+
+            @include respond(small) {
+                .pin {
+                    display: none;
+                }
+
+                img {
+                    width: 32px;
+                    height: 40px;
+                    margin-right: 8px;
+                }
+
+                span {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .d-none {
+                @include respond(small) {
+                    display: block;
+                }
             }
         }
 
@@ -31,10 +85,23 @@
             flex-direction: column;
             align-items: flex-end;
             gap: 10px;
+
+            @include respond(large) {
+                align-items: center;
+                text-align: center;
+            }
+
+            @include respond(small) {
+                gap: 32px;
+            }
         }
     }
 }
 
 .half {
-    width: 47%;
+    width: 50%;
+
+    @include respond(medium) {
+        width: 80%;
+    }
 }
