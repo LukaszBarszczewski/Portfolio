@@ -53,6 +53,13 @@
         height: 26px;
       }
 
+      .ellipse-full-screen {
+        @include respond(large) {
+          display: none;
+
+        }
+      }
+
       .project-description {
         display: flex;
         flex-direction: column;
@@ -60,6 +67,19 @@
 
         p {
           margin: 0 0 16px 0;
+        }
+
+        .ellipse-resp {
+          display: flex;
+          gap: 16px;
+
+          @include respond(small) {
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+
         }
       }
     }
@@ -107,6 +127,16 @@
       @include respond(small) {
         max-width: 270px;
       }
+    }
+  }
+
+  p {
+    @include respond(large) {
+      color: rgba(137, 188, 217, 1);
+    }
+
+    @include respond(small) {
+      font-size: 16px;
     }
   }
 }
