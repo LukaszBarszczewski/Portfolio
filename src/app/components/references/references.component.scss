@@ -1,15 +1,75 @@
+@import '../../../styles.scss';
+
+
 .references-section {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 56px;
 
+    @include respond(medium) {
+        .title-resp {
+            span {
+                font-size: 28px;
+            }
+        }
+
+        .d-none {
+            display: block;
+        }
+    }
+
+    @include respond(xsmall) {
+        .title-resp {
+            padding: 0 32px;
+        }
+    }
+
+
+
     .title {
         font-size: 32px;
+
+        @include respond(large) {
+            padding: 0 32px;
+        }
+
+        @include respond(medium) {
+            display: none;
+        }
     }
 
     .references {
         display: flex;
         gap: 56px;
+
+        @include respond(large) {
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            width: 90%;
+            padding-bottom: 16px;
+    
+            &::-webkit-scrollbar {
+                height: 8px;
+            }
+    
+            &::-webkit-scrollbar-track {
+                background: rgba(248, 245, 236, 0.2);
+                border-radius: 10px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background: rgba(137, 188, 217, 0.8);
+                border-radius: 10px;
+                transition: background 0.3s ease-in-out;
+            }
+        }
+
+        @include respond(medium) {
+            img {
+                width: 260px;
+            }
+        }
     }
 }
