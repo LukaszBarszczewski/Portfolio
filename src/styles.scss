@@ -98,14 +98,15 @@ body {
 // RESPONSIVENESS:
 
 $breakpoints: (
-  small: 580px,
-  medium: 720px,
-  large: 1215px,
-  xlarge: 1280px
+    xsmall: 400px,
+    small: 580px,
+    medium: 720px,
+    large: 1215px,
+    xlarge: 1280px
 );
 
 @mixin respond($size) {
-  @media (max-width: map-get($breakpoints, $size)) {
-    @content;
-  }
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
 }

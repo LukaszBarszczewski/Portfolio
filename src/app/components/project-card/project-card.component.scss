@@ -20,6 +20,10 @@
     }
   }
 
+  @include respond(medium) {
+    border-radius: 0 0 80px 80px;
+  }
+
   p {
     font-size: 28px;
   }
