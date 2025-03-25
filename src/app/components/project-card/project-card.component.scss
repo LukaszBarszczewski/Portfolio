@@ -18,6 +18,14 @@
     .d-none {
       display: block;
     }
+
+    .live-test-resp {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      width: inherit;
+      padding-bottom: 16px;
+    }
   }
 
   @include respond(medium) {

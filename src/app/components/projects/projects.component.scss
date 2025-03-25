@@ -20,11 +20,11 @@
   }
 
   @include respond(small) {
-    min-height: 850px;
+    min-height: 900px;
   }
 
   @include respond(xsmall) {
-    min-height: 960px;
+    min-height: 1050px;
   }
 
   .projects-container {

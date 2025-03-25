@@ -1,3 +1,6 @@
+@import '../../../styles.scss';
+
+
 .contact-me-section {
     display: flex;
     align-items: center;
@@ -18,6 +21,14 @@
             align-items: center;
             gap: 16px;
         }
+
+        @include respond(large) {
+            flex-direction: column;
+
+            .text {
+                width: 100%;
+            }
+        }
     }
 
     .contact-form {
@@ -26,6 +37,22 @@
         justify-content: center;
         gap: 15px;
         width: 60%;
+
+        .message {
+            textarea::placeholder {
+                color: transparent;
+
+                @include respond(medium) {
+                    color: gray;
+                }
+            }
+
+            @include respond(medium) {
+                label {
+                    display: none;
+                }
+            }
+        }
 
         label {
             font-size: 18px;
@@ -63,8 +90,34 @@
             display: flex;
             justify-content: space-between;
 
+            @include respond(medium) {
+                gap: 16px;
+            }
+
             .name-and-email {
                 width: 45%;
+
+                input::placeholder {
+                    color: transparent;
+                  }
+
+                @include respond(medium) {
+                    label {
+                        display: none;
+                    }
+
+                    input::placeholder {
+                        color: gray;
+                      }
+                }
+            }
+
+            @include respond(medium) {
+                flex-direction: column;
+
+                .name-and-email {
+                    width: 100%;
+                }
             }
         }
 
