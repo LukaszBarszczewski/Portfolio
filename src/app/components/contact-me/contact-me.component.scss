@@ -6,10 +6,21 @@
     align-items: center;
     flex-direction: column;
 
+    .headline {
+        @include respond(xsmall) {
+            text-align: center;
+            margin: 0 16px;
+        }
+    }
+
     .get-in-touch {
         display: flex;
         gap: 36px;
         width: 60vw;
+
+        @include respond(small) {
+            width: 80vw;
+         }
 
         .text {
             width: 50%;
@@ -37,6 +48,11 @@
         justify-content: center;
         gap: 15px;
         width: 60%;
+
+        @include respond(small) {
+            width: 80%;
+            align-items: flex-start;
+         }
 
         .message {
             textarea::placeholder {
@@ -78,6 +94,14 @@
                 background: rgba(137, 188, 217, 0.2);
                 border-color: rgba(137, 188, 217, 1);
                 outline: none;
+            }
+
+            @include respond(small) {
+                padding: 20px 65px 20px 20px;
+            }
+
+            @include respond(xsmall) {
+                padding: 20px;
             }
         }
 
