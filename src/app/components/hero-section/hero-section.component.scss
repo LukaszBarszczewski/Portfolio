@@ -18,8 +18,18 @@
     @include respond(small) {}
 
     .logo-responsive {
+        .hamburger-menu {
+            width: 32px;
+            height: 32px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         @include respond(large) {
             display: flex;
+            justify-content: space-between;
             width: 80%;
             margin-bottom: 64px;
         }
@@ -57,6 +67,33 @@
 
     .introduction {
         width: 50%;
+        position: relative;
+
+        .logo-and-links {
+            
+        }
+
+        .links {
+            position: absolute;
+            top: 0px;
+            right: 88px;
+            display: flex;
+            gap: 8px;
+
+            img {
+                border-radius: 18px;
+
+                &:hover {
+                    box-shadow: 0 0 16px rgba(137, 188, 217, 0.5);
+                    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+
+            @include respond(large) {
+                display: none;
+            }
+        }
 
         .name {
             font-size: 88px;
@@ -97,6 +134,8 @@
         }
 
         .logo-high-resolution {
+            display: flex;
+
             @include respond(large) {
                 display: none;
             }
