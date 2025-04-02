@@ -11,6 +11,10 @@
   padding: 15px 0;
   background: #89bcd912;
 
+  .live-test-resp {
+    display: none;
+  }
+
   @include respond(large) {
     flex-direction: column;
     align-items: center;

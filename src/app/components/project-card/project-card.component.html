@@ -54,7 +54,7 @@
       </section>
     </ul>
 
-    <div class="btn-section live-test-resp">
+    <div class="live-test-resp">
       <button class="btn-light josefin-sans">Live Test</button>
       <button class="btn-dark blue josefin-sans">GitHub</button>
     </div>
@@ -73,7 +73,7 @@
     <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
 
     <div class="btn-section gap-36">
-      <button class="btn-light josefin-sans">Live Test</button>
+      <button class="btn-light josefin-sans" (click)="openLink()">Live Test</button>
       <button class="btn-dark blue josefin-sans">GitHub</button>
     </div>
   </div>
