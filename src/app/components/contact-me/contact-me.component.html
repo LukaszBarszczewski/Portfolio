@@ -21,28 +21,28 @@
         </div>
     </section>
 
-    <form class="contact-form josefin-sans">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form josefin-sans">
 
         <div class="name-and-email-inputs">
             <div class="name-and-email blue">
                 <label for="name">Your Name</label>
-                <input class="josefin-sans" type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
+                <input [(ngModel)]="contactData.name" (ngModelChange)="updateButtonState()" class="josefin-sans" type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
             </div>
 
             <div class="name-and-email blue">
                 <label for="email">Your Email</label>
-                <input class="josefin-sans" type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off">
+                <input [(ngModel)]="contactData.email" (ngModelChange)="updateButtonState()" class="josefin-sans" type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
         </div>
 
         <div class="message">
             <label class="blue" for="message">Your Message</label>
-            <textarea class="josefin-sans" id="message" placeholder="Your Message" name="message" required></textarea>
+            <textarea [(ngModel)]="contactData.message" (ngModelChange)="updateButtonState()" class="josefin-sans" id="message" placeholder="Your Message" name="message" required></textarea>
         </div>
 
         <div class="checkbox-container creme-white">
             <div style="display: flex; align-items: center;">
-                <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState($event)">
+                <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState()">
                 <label for="privacy">
                     I've read the <a class="blue" href="#">privacy policy</a> and agree to the processing of my data as outlined.
                 </label>
