@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeroSectionComponent {
 
+  menuOpen = false;
+
+  unwrapHamburgerMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

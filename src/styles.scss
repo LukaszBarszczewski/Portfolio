@@ -97,6 +97,15 @@ body {
     }
 }
 
+.menu-button {
+    font-size: 26px;
+
+    a {
+        text-decoration: none;
+        color: rgba(38, 46, 52, 1);
+    }
+}
+
 .d-none {
     display: none;
 }

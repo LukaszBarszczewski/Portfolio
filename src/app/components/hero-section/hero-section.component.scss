@@ -47,7 +47,21 @@
         justify-content: center;
         align-items: center;
 
-        @include respond(large) {}
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+
+            img {
+                display: block;
+              }
+          
+              .profile-pic {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+        }
 
         @include respond(medium) {
             img {
@@ -140,5 +154,11 @@
                 display: none;
             }
         }
+    }
+
+    .menu-resp {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 }

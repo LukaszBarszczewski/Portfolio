@@ -9,14 +9,26 @@
             </div>
         </div>
 
-        <img class="hamburger-menu" src="assets/img/hamburger-menu.png" alt="">
+        <img class="hamburger-menu" (click)="unwrapHamburgerMenu()" src="assets/img/hamburger-menu.png" alt="">
     </div>
 
     <section class="foto-section">
-        <div>
-            <img src="assets/img/bg-shape.png" alt="Background Shape">
+        <div class="profile-wrapper">
+            <div id="profile-pic" class="profile-pic">
+                @if (menuOpen) {
+                  <div class="menu-resp">
+                    <div class="menu-button josefin-sans"><a href="#why-me">Why me</a></div>
+                    <div class="menu-button josefin-sans"><a href="#skills">Skills</a></div>
+                    <div class="menu-button josefin-sans"><a href="#projects">Projects</a></div>
+                    <div class="menu-button josefin-sans"><a href="#contact">Contact</a></div>
+                  </div>
+                } @else {
+                  <img src="assets/img/dein-bild.png" alt="Profilbild">
+                }
+              </div>
+          <img src="assets/img/bg-shape.png" alt="Background Shape">
         </div>
-    </section>
+      </section>
 
     <section class="introduction">
 
