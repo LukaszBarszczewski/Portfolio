@@ -34,6 +34,10 @@
 
     .project-header {
       height: 66px;
+
+      span:hover {
+        color: rgba(248, 245, 236, 1);
+      }
     }
 
     @include respond(medium) {
@@ -48,11 +52,6 @@
       padding: 32px;
       border-radius: 32px 32px 0 0;
       cursor: pointer;
-
-      // @include respond(large) {
-      //   padding: 16px 16px 2px 16px;
-      //   border-radius: 32px 32px 0 0;
-      // }
 
       @include respond(medium) {
         font-size: 20px;
@@ -70,4 +69,14 @@
 .active {
   color: rgba(248, 245, 236, 1);
   background-color: #89BCD912;
+  animation: fadeSlideIn 2s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

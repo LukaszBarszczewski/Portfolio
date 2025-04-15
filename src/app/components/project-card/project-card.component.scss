@@ -10,6 +10,7 @@
   width: 100vw;
   padding: 15px 0;
   background: #89bcd912;
+  animation: fadeSlideIn 2s ease-out forwards;
 
   .live-test-resp {
     display: none;
@@ -154,5 +155,14 @@
     @include respond(small) {
       font-size: 16px;
     }
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

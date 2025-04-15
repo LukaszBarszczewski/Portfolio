@@ -2,14 +2,9 @@
 
   <div class="img-resp d-none">
 
-    <div class="technologies-img-resp">
-      <img src="assets/img/js-no-txt.png" alt="JavaScript">
-      <img src="assets/img/html-no-txt.png" alt="HTML">
-      <img src="assets/img/css-no-txt.png" alt="CSS">
-      <img src="assets/img/firebase-no-txt.png" alt="Firebase">
-    </div>
+    <div class="technologies-img" [innerHTML]="technologies"></div>
 
-    <img class="screenshot" [src]="image" [alt]="title">
+    <img class="screenshot" [style.width]="'450px'" [style.height]="'216px'" [style.borderRadius]="'30px'"  [src]="image" [alt]="title">
   </div>
 
   <div class="project-descriptions">
@@ -63,18 +58,13 @@
   <div class="project-test-section">
     <span>Technologies</span>
 
-    <div class="technologies-img">
-      <img src="assets/img/js-no-txt.png" alt="JavaScript">
-      <img src="assets/img/html-no-txt.png" alt="HTML">
-      <img src="assets/img/css-no-txt.png" alt="CSS">
-      <img src="assets/img/firebase-no-txt.png" alt="Firebase">
-    </div>
+    <div class="technologies-img" [innerHTML]="technologies"></div>
 
     <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
 
     <div class="btn-section gap-36">
-      <button class="btn-light josefin-sans" (click)="openLink()">Live Test</button>
-      <button class="btn-dark blue josefin-sans">GitHub</button>
+      <button class="btn-light josefin-sans">Live Test</button>
+      <button class="btn-dark blue josefin-sans" (click)="openLink()">GitHub</button>
     </div>
   </div>
 

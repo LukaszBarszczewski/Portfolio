@@ -13,6 +13,7 @@ export class ProjectCardComponent {
   @Input() groupwork: string = '';
   @Input() image: string = '';
   @Input() link: string = '#';
+  @Input() technologies: string = '';
   
   openLink() {
     window.open(this.link);

@@ -30,7 +30,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $headers[] = "From: noreply@mywebsite.com";
 
             if (mail($recipient, $subject, $message, implode("\r\n", $headers))) {
-                echo "MAIL_SENT";
+                echo json_encode(["status" => "MAIL_SENT"]);
             } else {
                 http_response_code(500);
                 echo "MAIL_FAILED";
