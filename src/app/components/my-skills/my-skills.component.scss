@@ -34,6 +34,13 @@
         .currently-learning {
             position: relative;
 
+            &:hover {
+                .bg-shape {
+                    opacity: 0.8;
+                    transform: rotate(30deg);
+                }
+            }
+
             .currently-learning-img {
                 display: flex;
                 justify-content: space-around;

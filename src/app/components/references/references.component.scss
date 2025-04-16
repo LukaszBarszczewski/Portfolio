@@ -43,22 +43,29 @@
         display: flex;
         gap: 56px;
 
+        .bg-shape {
+            &:hover {
+                opacity: 0.8;
+                transform: rotate(30deg);
+            }
+        }
+
         @include respond(large) {
             overflow-x: auto;
             overflow-y: hidden;
             white-space: nowrap;
             width: 90%;
             padding-bottom: 16px;
-    
+
             &::-webkit-scrollbar {
                 height: 8px;
             }
-    
+
             &::-webkit-scrollbar-track {
                 background: rgba(248, 245, 236, 0.2);
                 border-radius: 10px;
             }
-    
+
             &::-webkit-scrollbar-thumb {
                 background: rgba(137, 188, 217, 0.8);
                 border-radius: 10px;
