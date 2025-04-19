@@ -12,7 +12,7 @@ export class ProjectCardComponent {
   @Input() organization: string = '';
   @Input() groupwork: string = '';
   @Input() image: string = '';
-  @Input() link: string = '#';
+  @Input() link: string = '';
   @Input() technologies: string = '';
   
   openLink() {

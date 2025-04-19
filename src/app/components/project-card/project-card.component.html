@@ -64,7 +64,9 @@
 
     <div class="btn-section gap-36">
       <button class="btn-light josefin-sans">Live Test</button>
-      <button class="btn-dark blue josefin-sans" (click)="openLink()">GitHub</button>
+      <a [href]="link" target="_blank" rel="noopener noreferrer">
+        <button class="btn-dark blue josefin-sans">GitHub</button>
+      </a>
     </div>
   </div>
 
