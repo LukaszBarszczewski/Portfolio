@@ -14,8 +14,8 @@ html {
 
 body {
     background-color: rgba(38, 46, 52, 1);
-    margin: 0;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .josefin-sans {
@@ -27,9 +27,9 @@ body {
 }
 
 .d-flex-column-center {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .d-flex {
@@ -70,15 +70,15 @@ body {
 }
 
 .btn-dark {
+    background: none;
     border: 1px solid rgba(137, 188, 217, 1);
     border-radius: 30px;
     padding: 13px 30px;
-    background: none;
     width: 134px;
 
     &:hover {
-        cursor: pointer;
         background: rgba(137, 188, 217, 0.2);
+        cursor: pointer;
     }
 }
 
@@ -87,13 +87,13 @@ body {
     border: none;
     border-radius: 30px;
     padding: 13px 30px;
-    width: 134px;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
+    width: 134px;
 
     &:hover {
-        cursor: pointer;
         background: rgba(248, 245, 236, 1);
+        cursor: pointer;
     }
 }
 
@@ -101,8 +101,8 @@ body {
     font-size: 26px;
 
     a {
-        text-decoration: none;
         color: rgba(38, 46, 52, 1);
+        text-decoration: none;
 
         &:hover {
             color: rgba(248, 245, 236, 1);
