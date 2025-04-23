@@ -5,13 +5,17 @@
 
     <section class="get-in-touch creme-white josefin-sans">
         <div class="text">
-            <span>Feel free to get in touch with job offers or opportunities such as junior front-end developer, trainee, or web development roles. I'm excited to grow as a developer and contribute with clean, efficient code and a strong sense of teamwork.</span>
+            <span>Feel free to get in touch with job offers or opportunities such as junior front-end developer,
+                trainee, or web development roles. I'm excited to grow as a developer and contribute with clean,
+                efficient code and a strong sense of teamwork.</span>
         </div>
+
         <div class="tel-mail">
             <div class="icon-text">
                 <img src="assets/img/email.png" alt="Email">
                 <span>E-mail: lukasz.barszczewski&#64;yahoo.com</span>
             </div>
+
             <div class="icon-text gap-36">
                 <img src="assets/img/phone.png" alt="Phone">
                 <span>Tel: 01724342490</span>
@@ -20,36 +24,39 @@
     </section>
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" method="post" class="contact-form josefin-sans">
-
         <div class="name-and-email-inputs">
             <div class="name-and-email blue">
                 <label for="name">Your Name</label>
-                <input [(ngModel)]="contactData.name" (ngModelChange)="updateButtonState()" class="josefin-sans" type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
+                <input [(ngModel)]="contactData.name" (ngModelChange)="updateButtonState()" class="josefin-sans"
+                    type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
             </div>
 
             <div class="name-and-email blue">
                 <label for="email">Your Email</label>
-                <input [(ngModel)]="contactData.email" (ngModelChange)="updateButtonState()" class="josefin-sans" type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <input [(ngModel)]="contactData.email" (ngModelChange)="updateButtonState()" class="josefin-sans"
+                    type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
         </div>
 
         <div class="message">
             <label class="blue" for="message">Your Message</label>
-            <textarea [(ngModel)]="contactData.message" (ngModelChange)="updateButtonState()" class="josefin-sans" id="message" placeholder="Your Message" name="message" required></textarea>
+            <textarea [(ngModel)]="contactData.message" (ngModelChange)="updateButtonState()" class="josefin-sans"
+                id="message" placeholder="Your Message" name="message" required></textarea>
         </div>
 
         <div class="checkbox-container creme-white">
             <div style="display: flex; align-items: center;">
                 <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState()">
                 <label for="privacy">
-                    I've read the <a class="blue" href="#">privacy policy</a> and agree to the processing of my data as outlined.
+                    I've read the <a class="blue" href="#">privacy policy</a> and agree to the processing of my data as
+                    outlined.
                 </label>
             </div>
-        
+
             <div [style]="{ display: 'flex', justifyContent: 'flex-end' }">
                 <button class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">Send</button>
             </div>
         </div>
-
     </form>
 </section>

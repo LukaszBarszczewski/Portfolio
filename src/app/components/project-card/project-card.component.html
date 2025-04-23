@@ -1,21 +1,22 @@
 <div class="project-card">
-
   <div class="img-resp d-none">
-
     <div class="technologies-img" [innerHTML]="technologies"></div>
 
-    <img class="screenshot" [style.width]="'450px'" [style.height]="'216px'" [style.borderRadius]="'30px'" [style.margin-top]="'16px'"  [src]="image" [alt]="title">
+    <img class="screenshot" [style.width]="'450px'" [style.height]="'216px'" [style.borderRadius]="'30px'"
+      [style.margin-top]="'16px'" [src]="image" [alt]="title">
   </div>
 
   <div class="project-descriptions">
     <ul>
       <section class="project-description-section gap-36">
         <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
+
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
             <p>About the project</p>
           </div>
+
           <li>
             <span>{{ abouts }}</span>
           </li>
@@ -24,11 +25,13 @@
 
       <section class="project-description-section gap-36">
         <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
+
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
             <p>How I have organized my work process</p>
           </div>
+
           <li>
             <span>{{ organization }}</span>
           </li>
@@ -37,11 +40,13 @@
 
       <section class="project-description-section gap-36">
         <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
+
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
             <p>My group work experience</p>
           </div>
+          
           <li>
             <span>{{ groupwork }}</span>
           </li>
@@ -63,11 +68,11 @@
     <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
 
     <div class="btn-section gap-36">
-      <button class="btn-light josefin-sans">Live Test</button>
+      <button class="btn-light josefin-sans" (click)="openLink()">Live Test</button>
+
       <a [href]="link" target="_blank" rel="noopener noreferrer">
         <button class="btn-dark blue josefin-sans">GitHub</button>
       </a>
     </div>
   </div>
-
 </div>

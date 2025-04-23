@@ -26,7 +26,6 @@ export class ContactMeComponent {
     message: "",
   }
 
-
   post = {
     endPoint: 'http://lukasz-barszczewski.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -43,7 +42,6 @@ export class ContactMeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -52,7 +50,6 @@ export class ContactMeComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid) {
-
       ngForm.resetForm();
     }
   }

@@ -14,8 +14,8 @@ export class ProjectCardComponent {
   @Input() image: string = '';
   @Input() link: string = '';
   @Input() technologies: string = '';
-  
+
   openLink() {
-    window.open(this.link);
+    window.open('https://www.linkedin.com/in/lukasz-barszczewski-182685328/');
   }
 }

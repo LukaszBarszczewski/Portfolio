@@ -3,7 +3,6 @@
 </div>
 
 <section class="projects josefin-sans">
-
   <div class="projects-container">
     <div class="project-header">
       @for (project of projects; track $index) {
@@ -14,11 +13,12 @@
 
     <div class="project-cards creme-white">
       @for (project of projects; track $index) {
-      <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [image]="project.image" [abouts]="project.abouts" [organization]="project.organization" [groupwork]="project.groupwork" [technologies]="project.technologies" [link]="project.link">
+      <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [image]="project.image"
+        [abouts]="project.abouts" [organization]="project.organization" [groupwork]="project.groupwork"
+        [technologies]="project.technologies" [link]="project.link">
         [image]="project.image" [link]="project.link">
       </app-project-card>
       }
     </div>
-
   </div>
 </section>

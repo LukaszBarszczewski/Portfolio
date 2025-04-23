@@ -2,14 +2,14 @@
 
 
 .contact-me-section {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
 
     .headline {
         @include respond(xsmall) {
-            text-align: center;
             margin: 0 16px;
+            text-align: center;
         }
     }
 
@@ -17,10 +17,6 @@
         display: flex;
         gap: 36px;
         width: 60vw;
-
-        @include respond(small) {
-            width: 80vw;
-         }
 
         .text {
             width: 50%;
@@ -40,19 +36,18 @@
                 width: 100%;
             }
         }
+
+        @include respond(small) {
+            width: 80vw;
+        }
     }
 
     .contact-form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         gap: 15px;
+        justify-content: center;
         width: 60%;
-
-        @include respond(small) {
-            width: 80%;
-            align-items: flex-start;
-         }
 
         .message {
             textarea::placeholder {
@@ -80,15 +75,14 @@
 
         input,
         textarea {
-            width: 100%;
-            padding: 20px;
+            background: none;
             border: 1px solid rgba(137, 188, 217, 1);
             border-radius: 30px;
-            font-size: 16px;
-            background: none;
             color: rgba(248, 245, 236, 1);
+            font-size: 16px;
+            padding: 20px;
             transition: 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out;
-
+            width: 100%;
 
             &:focus {
                 background: rgba(137, 188, 217, 0.2);
@@ -123,7 +117,7 @@
 
                 input::placeholder {
                     color: transparent;
-                  }
+                }
 
                 @include respond(medium) {
                     label {
@@ -132,7 +126,7 @@
 
                     input::placeholder {
                         color: gray;
-                      }
+                    }
                 }
             }
 
@@ -160,9 +154,9 @@
                 border: none;
                 cursor: pointer;
                 height: 24px;
-                width: 24px;
                 outline: none;
                 padding: 0;
+                width: 24px;
             }
 
             input[type="checkbox"]::before {
@@ -178,20 +172,26 @@
             }
 
             input[type="checkbox"]:checked:after {
+                background-image: url("/assets/img/ellipse.png");
+                background-repeat: no-repeat;
+                background-size: contain;
                 content: "";
                 display: block;
-                width: 24px;
                 height: 24px;
-                background-image: url("/assets/img/ellipse.png");
-                background-size: contain;
-                background-repeat: no-repeat;
+                width: 24px;
             }
 
             button:disabled {
-                cursor: not-allowed;
                 border-color: gray;
                 color: gray;
+                cursor: not-allowed;
             }
         }
+
+        @include respond(small) {
+            align-items: flex-start;
+            width: 80%;
+        }
+
     }
 }

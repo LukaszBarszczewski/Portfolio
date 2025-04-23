@@ -2,8 +2,8 @@
 
 
 .my-skills-section {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
     gap: 80px;
 
@@ -13,16 +13,16 @@
         justify-content: center;
 
         @include respond(large) {
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
         }
 
         .skills-icons {
-            display: flex;
             align-items: center;
-            justify-content: space-between;
+            display: flex;
             flex-wrap: wrap;
             gap: 40px;
+            justify-content: space-between;
             max-width: 340px;
 
             @include respond(small) {
@@ -46,22 +46,21 @@
                 justify-content: space-around;
 
                 img {
-                    width: 40px;
                     height: 50px;
+                    width: 40px;
                 }
             }
 
             .currently-learning-description {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                max-width: 260px;
-
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                left: 50%;
+                max-width: 260px;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                transform: translate(-50%, -50%);
             }
 
             @include respond(small) {
@@ -71,9 +70,9 @@
 
         .currently-learning-resp {
             .currently-learning-resp-description {
+                align-items: center;
                 display: flex;
                 justify-content: center;
-                align-items: center;
 
                 span {
                     width: 50%;
@@ -87,21 +86,21 @@
             .currently-learning-resp-img {
                 display: flex;
                 gap: 8px;
+                left: 50%;
                 position: absolute;
                 top: 50%;
-                left: 50%;
                 transform: translate(-50%, -50%);
 
                 img {
-                    width: 40px;
                     height: 50px;
+                    width: 40px;
                 }
             }
 
             @include respond(small) {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
 
                 p {
                     padding-bottom: 16px;

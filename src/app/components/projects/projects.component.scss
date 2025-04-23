@@ -15,22 +15,10 @@
   flex-direction: column;
   gap: 80px;
 
-  @include respond(medium) {
-    min-height: 950px;
-  }
-
-  @include respond(small) {
-    min-height: 900px;
-  }
-
-  @include respond(xsmall) {
-    min-height: 1050px;
-  }
-
   .projects-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     .project-header {
       height: 66px;
@@ -40,18 +28,14 @@
       }
     }
 
-    @include respond(medium) {
-      height: 42px;
-    }
-
     .project-title {
+      border-radius: 32px 32px 0 0;
+      cursor: pointer;
       font-family: 'Josefin Sans';
       font-size: 30px;
       font-weight: 500;
       line-height: 36px;
       padding: 32px;
-      border-radius: 32px 32px 0 0;
-      cursor: pointer;
 
       @include respond(medium) {
         font-size: 20px;
@@ -63,19 +47,36 @@
         padding: 16px 16px 11px 16px;
       }
     }
+
+    @include respond(medium) {
+      height: 42px;
+    }
+  }
+
+  @include respond(medium) {
+    min-height: 950px;
+  }
+
+  @include respond(small) {
+    min-height: 1000px;
+  }
+
+  @include respond(xsmall) {
+    min-height: 1100px;
   }
 }
 
 .active {
-  color: rgba(248, 245, 236, 1);
-  background-color: #89BCD912;
   animation: fadeSlideIn 2s ease-out forwards;
+  background-color: #89BCD912;
+  color: rgba(248, 245, 236, 1);
 }
 
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

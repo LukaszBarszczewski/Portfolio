@@ -2,39 +2,18 @@
 
 
 .project-card {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 40px;
-  flex: 2 1;
-  width: 100vw;
-  padding: 15px 0;
-  background: #89bcd912;
   animation: fadeSlideIn 2s ease-out forwards;
+  background: #89bcd912;
+  display: flex;
+  flex: 2 1;
+  gap: 40px;
+  justify-content: space-around;
+  padding: 15px 0;
+  width: 100vw;
 
   .live-test-resp {
     display: none;
-  }
-
-  @include respond(large) {
-    flex-direction: column;
-    align-items: center;
-
-    .d-none {
-      display: block;
-    }
-
-    .live-test-resp {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      width: inherit;
-      padding-bottom: 16px;
-    }
-  }
-
-  @include respond(medium) {
-    border-radius: 0 0 80px 80px;
   }
 
   p {
@@ -42,12 +21,16 @@
   }
 
   .project-descriptions {
+    align-items: start;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
     text-align: start;
     width: 60%;
+
+    li {
+      list-style-type: none;
+    }
 
     @include respond(large) {
       width: 100%;
@@ -57,23 +40,18 @@
       }
     }
 
-    li {
-      list-style-type: none;
-    }
-
     .project-description-section {
       display: flex;
       padding: 32px 0;
 
       img {
-        width: 26px;
         height: 26px;
+        width: 26px;
       }
 
       .ellipse-full-screen {
         @include respond(large) {
           display: none;
-
         }
       }
 
@@ -92,20 +70,19 @@
 
           @include respond(small) {
             img {
-              width: 16px;
               height: 16px;
+              width: 16px;
             }
           }
-
         }
       }
     }
   }
 
   .project-test-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 
     @include respond(large) {
@@ -115,8 +92,8 @@
 
   .technologies-img {
     display: flex;
-    justify-content: space-around;
     gap: 16px;
+    justify-content: space-around;
   }
 
   .btn-section {
@@ -134,12 +111,11 @@
           width: 32px;
         }
       }
-
     }
 
     .screenshot {
-      max-width: 450px;
       border-radius: 30px;
+      max-width: 450px;
 
       @include respond(small) {
         max-width: 270px;
@@ -156,12 +132,34 @@
       font-size: 16px;
     }
   }
+
+  @include respond(large) {
+    align-items: center;
+    flex-direction: column;
+
+    .d-none {
+      display: block;
+    }
+
+    .live-test-resp {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      padding-bottom: 16px;
+      width: inherit;
+    }
+  }
+
+  @include respond(medium) {
+    border-radius: 0 0 80px 80px;
+  }
 }
 
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

@@ -2,25 +2,14 @@
 
 
 .hero-section {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-top: 80px;
-
-    @include respond(large) {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    @include respond(medium) {
-        // margin-left: 32px;
-    }
-
-    @include respond(small) {}
 
     .logo-responsive {
         .hamburger-menu {
-            width: 32px;
             height: 32px;
+            width: 32px;
 
             &:hover {
                 cursor: pointer;
@@ -30,8 +19,8 @@
         @include respond(large) {
             display: flex;
             justify-content: space-between;
-            width: 80%;
             margin-bottom: 64px;
+            width: 80%;
         }
     }
 
@@ -42,25 +31,25 @@
     }
 
     .foto-section {
-        width: 50%;
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
+        width: 50%;
 
         .profile-wrapper {
-            position: relative;
             display: inline-block;
+            position: relative;
 
             img {
                 display: block;
-              }
-          
-              .profile-pic {
+            }
+
+            .profile-pic {
+                left: 50%;
                 position: absolute;
                 top: 50%;
-                left: 50%;
                 transform: translate(-50%, -50%);
-              }
+            }
         }
 
         @include respond(medium) {
@@ -74,33 +63,26 @@
                 width: 280px;
             }
         }
-
-
-        @include respond(small) {}
     }
 
     .introduction {
-        width: 50%;
         position: relative;
-
-        .logo-and-links {
-            
-        }
+        width: 50%;
 
         .links {
-            position: absolute;
-            top: 0px;
-            right: 88px;
             display: flex;
             gap: 8px;
+            position: absolute;
+            right: 88px;
+            top: 0px;
 
             img {
                 border-radius: 18px;
 
                 &:hover {
                     box-shadow: 0 0 16px rgba(137, 188, 217, 0.5);
-                    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
                     cursor: pointer;
+                    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
                 }
             }
 
@@ -136,15 +118,11 @@
 
 
         .name-section {
+            align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             text-align: center;
-
-
-
-            @include respond(small) {}
         }
 
         .logo-high-resolution {
@@ -160,5 +138,10 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+    }
+
+    @include respond(large) {
+        flex-direction: column;
+        text-align: center;
     }
 }
