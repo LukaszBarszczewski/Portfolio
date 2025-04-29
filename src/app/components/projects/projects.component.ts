@@ -16,6 +16,7 @@ export class ProjectsComponent {
       groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
       image: 'assets/img/join.png',
       link: 'https://github.com/johannesngl/join',
+      live: 'http://join.lukasz-barszczewski.de/',
       technologies: '<img src="assets/img/js-no-txt.png" alt="JavaScript"> <img src="assets/img/html-no-txt.png" alt="HTML"> <img src="assets/img/css-no-txt.png" alt="CSS"> <img src="assets/img/firebase-no-txt.png" alt="Firebase">'
     },
     {
@@ -25,6 +26,7 @@ export class ProjectsComponent {
       groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
       image: 'assets/img/wowc.png',
       link: 'https://github.com/LukaszBarszczewski/World-of-World.class',
+      live: 'http://world-of-world.class.lukasz-barszczewski.de/',
       technologies: '<img src="assets/img/js-no-txt.png" alt="JavaScript"> <img src="assets/img/html-no-txt.png" alt="HTML"> <img src="assets/img/css-no-txt.png" alt="CSS">'
     },
     {
@@ -34,6 +36,7 @@ export class ProjectsComponent {
       groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
       image: 'assets/img/pokedex.png',
       link: 'https://github.com/LukaszBarszczewski/Pokedex',
+      live: 'http://pokedex.lukasz-barszczewski.de/',
       technologies: '<img src="assets/img/js-no-txt.png" alt="JavaScript"> <img src="assets/img/html-no-txt.png" alt="HTML"> <img src="assets/img/css-no-txt.png" alt="CSS">'
     }
   ];

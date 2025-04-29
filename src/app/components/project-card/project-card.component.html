@@ -46,7 +46,7 @@
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
             <p>My group work experience</p>
           </div>
-          
+
           <li>
             <span>{{ groupwork }}</span>
           </li>
@@ -55,8 +55,12 @@
     </ul>
 
     <div class="live-test-resp">
-      <button class="btn-light josefin-sans">Live Test</button>
-      <button class="btn-dark blue josefin-sans">GitHub</button>
+      <a [href]="live" target="_blank" rel="noopener noreferrer">
+        <button class="btn-light josefin-sans">Live Test</button>
+      </a>
+      <a [href]="link" target="_blank" rel="noopener noreferrer">
+        <button class="btn-dark blue josefin-sans">GitHub</button>
+      </a>
     </div>
   </div>
 
@@ -68,8 +72,9 @@
     <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
 
     <div class="btn-section gap-36">
-      <button class="btn-light josefin-sans" (click)="openLink()">Live Test</button>
-
+      <a [href]="live" target="_blank" rel="noopener noreferrer">
+        <button class="btn-light josefin-sans">Live Test</button>
+      </a>
       <a [href]="link" target="_blank" rel="noopener noreferrer">
         <button class="btn-dark blue josefin-sans">GitHub</button>
       </a>
