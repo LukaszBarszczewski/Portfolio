@@ -20,7 +20,7 @@ export class ConfirmationComponent implements OnInit {
   ngOnInit(): void {
     let timer = setInterval(() => {
       this.countdown--;
-      if (this.countdown === 6) {
+      if (this.countdown === 0) {
         clearInterval(timer);
         this.navigateBack();
       }
