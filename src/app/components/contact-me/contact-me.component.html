@@ -49,7 +49,7 @@
             <div style="display: flex; align-items: center;">
                 <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState()">
                 <label for="privacy">
-                    I've read the <a class="blue" href="#">privacy policy</a> and agree to the processing of my data as
+                    I've read the <a class="blue" (click)="navigateToPrivacyPolicy()">privacy policy</a> and agree to the processing of my data as
                     outlined.
                 </label>
             </div>

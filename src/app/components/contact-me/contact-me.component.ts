@@ -16,6 +16,10 @@ export class ContactMeComponent {
 
   isDisabled: boolean = true;
 
+  navigateToPrivacyPolicy() {
+    this.router.navigateByUrl('/privacy');
+  }
+
   updateButtonState() {
     const checkbox = (document.getElementById('privacy') as HTMLInputElement)?.checked;
     const { name, email, message } = this.contactData;

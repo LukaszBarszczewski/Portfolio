@@ -1,16 +1,21 @@
 @import "../../../styles.scss";
 
-.legal-notice {
-    display: flex;
-    justify-content: center;
+.privacy-policy {
     align-items: center;
+    display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    line-break: normal;
     margin: 0 64px 72px 64px;
+
+    ul>li {
+        color: rgba(248, 245, 236, 1);
+    }
     
     a {
-        text-decoration: underline;
+        color: rgba(248, 245, 236, 1);
         cursor: pointer;
+        text-decoration: underline;
 
         &:hover {
             color: rgba(137, 188, 217, 1);
