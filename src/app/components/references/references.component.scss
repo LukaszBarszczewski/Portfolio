@@ -1,80 +1,141 @@
-@import '../../../styles.scss';
-
+@import "../../../styles.scss";
 
 .references-section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 
-    .title {
-        font-size: 32px;
+  .title {
+    font-size: 32px;
 
-        @include respond(large) {
-            padding: 0 32px;
-        }
-
-        @include respond(medium) {
-            display: none;
-        }
-    }
-
-    .references {
-        display: flex;
-        gap: 56px;
-
-        .bg-shape {
-            &:hover {
-                opacity: 0.8;
-                transform: rotate(30deg);
-            }
-        }
-
-        @include respond(large) {
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding-bottom: 16px;
-            white-space: nowrap;
-            width: 90%;
-
-            &::-webkit-scrollbar {
-                height: 8px;
-            }
-
-            &::-webkit-scrollbar-track {
-                background: rgba(248, 245, 236, 0.2);
-                border-radius: 10px;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background: rgba(137, 188, 217, 0.8);
-                border-radius: 10px;
-                transition: background 0.3s ease-in-out;
-            }
-        }
-
-        @include respond(medium) {
-            img {
-                width: 260px;
-            }
-        }
+    @include respond(large) {
+      padding: 0 32px;
     }
 
     @include respond(medium) {
-        .title-resp {
-            span {
-                font-size: 28px;
+      display: none;
+    }
+  }
+
+  .references {
+    display: flex;
+    gap: 56px;
+
+    .bg-shape {
+      &:hover {
+        opacity: 0.8;
+        transform: rotate(30deg);
+      }
+    }
+
+    .reference {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      position: relative;
+
+      a {
+        text-decoration: none;
+      }
+
+      .reference-description {
+        display: flex;
+        font-size: 18px;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+        left: 50%;
+        max-width: 260px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+
+        .reference-title {
+            display: flex;
+            
+            flex-direction: column;
+            gap:8px;
+
+            .reference-colleague {
+                font-size: 26px;
             }
-        }
+            
+          }
 
-        .d-none {
-            display: block;
-        }
+          .reference-linkedin{
+            text-decoration:underline;
+          }
+      }
+
+      
     }
 
-    @include respond(xsmall) {
-        .title-resp {
-            padding: 0 32px;
-        }
+    @include respond(large) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 16px;
+      width: 90%;
+
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(248, 245, 236, 0.2);
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(137, 188, 217, 0.8);
+        border-radius: 10px;
+        transition: background 0.3s ease-in-out;
+      }
     }
+
+    @include respond(medium) {
+
+      .reference {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        position: relative;
+
+        .reference-description {
+            display: flex;
+            font-size: 18px;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 80%;
+            left: 50%;
+            max-width: 260px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+      }
+    }
+  }
+
+  @include respond(medium) {
+    .title-resp {
+      span {
+        font-size: 28px;
+      }
+    }
+
+    .d-none {
+      display: block;
+    }
+  }
+
+  @include respond(xsmall) {
+    .title-resp {
+      padding: 0 32px;
+    }
+  }
 }
