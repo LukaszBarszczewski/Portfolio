@@ -37,6 +37,10 @@
 
       a {
         text-decoration: none;
+
+        &:hover {
+            color: rgba(248, 245, 236, 1);
+        }
       }
 
       .reference-description {

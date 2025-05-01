@@ -1,197 +1,211 @@
-@import '../../../styles.scss';
-
+@import "../../../styles.scss";
 
 .contact-me-section {
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .headline {
+    @include respond(xsmall) {
+      margin: 0 16px;
+      text-align: center;
+    }
+  }
+
+  .get-in-touch {
+    display: flex;
+    gap: 36px;
+    width: 60vw;
+
+    .tel-mail {
+      a {
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(137, 188, 217, 1);
+        }
+      }
+    }
+
+    .text {
+      width: 50%;
+    }
+
+    .icon-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+    }
+
+    @include respond(large) {
+      flex-direction: column;
+
+      .text {
+        width: 100%;
+      }
+    }
+
+    @include respond(small) {
+      width: 80vw;
+    }
+  }
+
+  .contact-form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    width: 60%;
 
-    .headline {
-        @include respond(xsmall) {
-            margin: 0 16px;
-            text-align: center;
+    .message {
+      textarea::placeholder {
+        color: transparent;
+
+        @include respond(medium) {
+          color: gray;
         }
-    }
+      }
 
-    .get-in-touch {
-        display: flex;
-        gap: 36px;
-        width: 60vw;
-
-        .text {
-            width: 50%;
-        }
-
-        .icon-text {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 16px;
-        }
-
-        @include respond(large) {
-            flex-direction: column;
-
-            .text {
-                width: 100%;
-            }
-        }
-
-        @include respond(small) {
-            width: 80vw;
-        }
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        justify-content: center;
-        width: 60%;
-
-        .message {
-            textarea::placeholder {
-                color: transparent;
-
-                @include respond(medium) {
-                    color: gray;
-                }
-            }
-
-            @include respond(medium) {
-                label {
-                    display: none;
-                }
-            }
-        }
-
+      @include respond(medium) {
         label {
-            font-size: 18px;
-
-            a {
-                text-decoration: none;
-            }
+          display: none;
         }
-
-        input,
-        textarea {
-            background: none;
-            border: 1px solid rgba(137, 188, 217, 1);
-            border-radius: 30px;
-            color: rgba(248, 245, 236, 1);
-            font-size: 16px;
-            padding: 20px;
-            transition: 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out;
-            width: 100%;
-
-            &:focus {
-                background: rgba(137, 188, 217, 0.2);
-                border-color: rgba(137, 188, 217, 1);
-                outline: none;
-            }
-
-            @include respond(small) {
-                padding: 20px 65px 20px 20px;
-            }
-
-            @include respond(xsmall) {
-                padding: 20px;
-            }
-        }
-
-        textarea {
-            height: 120px;
-            resize: none;
-        }
-
-        .name-and-email-inputs {
-            display: flex;
-            justify-content: space-between;
-
-            @include respond(medium) {
-                gap: 16px;
-            }
-
-            .name-and-email {
-                width: 45%;
-
-                input::placeholder {
-                    color: transparent;
-                }
-
-                @include respond(medium) {
-                    label {
-                        display: none;
-                    }
-
-                    input::placeholder {
-                        color: gray;
-                    }
-                }
-            }
-
-            @include respond(medium) {
-                flex-direction: column;
-
-                .name-and-email {
-                    width: 100%;
-                }
-            }
-        }
-
-        .checkbox-container {
-            display: flex;
-            flex-direction: column;
-
-            input {
-                width: 16px;
-            }
-
-            input[type="checkbox"] {
-                -webkit-appearance: none;
-                appearance: none;
-                background: none;
-                border: none;
-                cursor: pointer;
-                height: 24px;
-                outline: none;
-                padding: 0;
-                width: 24px;
-            }
-
-            input[type="checkbox"]::before {
-                content: "";
-            }
-
-            input[type="checkbox"]::after {
-                content: url("/assets/img/checkbox-unchecked.png");
-            }
-
-            input[type="checkbox"]:checked::before {
-                content: "";
-            }
-
-            input[type="checkbox"]:checked:after {
-                background-image: url("/assets/img/ellipse.png");
-                background-repeat: no-repeat;
-                background-size: contain;
-                content: "";
-                display: block;
-                height: 24px;
-                width: 24px;
-            }
-
-            button:disabled {
-                border-color: gray;
-                color: gray;
-                cursor: not-allowed;
-            }
-        }
-
-        @include respond(small) {
-            align-items: flex-start;
-            width: 80%;
-        }
-
+      }
     }
+
+    label {
+      font-size: 18px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    input,
+    textarea {
+      background: none;
+      border: 1px solid rgba(137, 188, 217, 1);
+      border-radius: 30px;
+      color: rgba(248, 245, 236, 1);
+      font-size: 16px;
+      padding: 20px;
+      transition: 0.5s ease-in-out, border-color 0.5s ease-in-out,
+        color 0.5s ease-in-out;
+      width: 100%;
+
+      &:focus {
+        background: rgba(137, 188, 217, 0.2);
+        border-color: rgba(137, 188, 217, 1);
+        outline: none;
+      }
+
+      @include respond(small) {
+        padding: 20px 65px 20px 20px;
+      }
+
+      @include respond(xsmall) {
+        padding: 20px;
+      }
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .name-and-email-inputs {
+      display: flex;
+      justify-content: space-between;
+
+      @include respond(medium) {
+        gap: 16px;
+      }
+
+      .name-and-email {
+        width: 45%;
+
+        input::placeholder {
+          color: transparent;
+        }
+
+        @include respond(medium) {
+          label {
+            display: none;
+          }
+
+          input::placeholder {
+            color: gray;
+          }
+        }
+      }
+
+      @include respond(medium) {
+        flex-direction: column;
+
+        .name-and-email {
+          width: 100%;
+        }
+      }
+    }
+
+    .checkbox-container {
+      display: flex;
+      flex-direction: column;
+
+      a:hover {
+        color: rgba(248, 245, 236, 1);
+      }
+
+      input {
+        width: 16px;
+      }
+
+      input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 24px;
+        outline: none;
+        padding: 0;
+        width: 24px;
+      }
+
+      input[type="checkbox"]::before {
+        content: "";
+      }
+
+      input[type="checkbox"]::after {
+        content: url("/assets/img/checkbox-unchecked.png");
+      }
+
+      input[type="checkbox"]:checked::before {
+        content: "";
+      }
+
+      input[type="checkbox"]:checked:after {
+        background-image: url("/assets/img/ellipse.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        display: block;
+        height: 24px;
+        width: 24px;
+      }
+
+      button:disabled {
+        border-color: gray;
+        color: gray;
+        cursor: not-allowed;
+      }
+    }
+
+    @include respond(small) {
+      align-items: flex-start;
+      width: 80%;
+    }
+  }
 }
