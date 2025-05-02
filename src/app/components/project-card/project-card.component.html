@@ -14,7 +14,7 @@
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p>About the project</p>
+            <p> {{ "projects.abouts" | translate }}  </p>
           </div>
 
           <li>
@@ -29,7 +29,7 @@
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p>How I have organized my work process</p>
+            <p>{{ "projects.organization" | translate }}</p>
           </div>
 
           <li>
@@ -44,7 +44,7 @@
         <div class="project-description">
           <div class="ellipse-resp">
             <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p>My group work experience</p>
+            <p> {{ "projects.groupwork" | translate }} </p>
           </div>
 
           <li>
@@ -65,7 +65,7 @@
   </div>
 
   <div class="project-test-section">
-    <span>Technologies</span>
+    <span>{{ "projects.technologies" | translate }}</span>
 
     <div class="technologies-img" [innerHTML]="technologies"></div>
 

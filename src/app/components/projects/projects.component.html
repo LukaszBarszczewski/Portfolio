@@ -1,18 +1,18 @@
 <div class="headline margin-80-0" id="projects">
-  <span class="blue anta">My Projects</span>
+  <span class="blue anta"> {{ "projects.title" | translate }} </span>
 </div>
 
 <section class="projects josefin-sans">
   <div class="projects-container">
     <div class="project-header">
-      @for (project of projects; track $index) {
+      @for (project of translatedProjects; track $index) {
       <span [class.active]="$index === activeProjectIndex" class="project-title blue"
         (click)="selectProject($index)">{{$index + 1}}. {{ project.title }} </span>
       }
     </div>
 
     <div class="project-cards creme-white">
-      @for (project of projects; track $index) {
+      @for (project of translatedProjects; track $index) {
       <app-project-card [hidden]="$index !== activeProjectIndex" [title]="project.title" [image]="project.image"
         [abouts]="project.abouts" [organization]="project.organization" [groupwork]="project.groupwork"
         [technologies]="project.technologies" [link]="project.link" [live]="project.live">

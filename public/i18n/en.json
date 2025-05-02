@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "title": "developer",
+    "job": "FRONTEND DEVELOPER"
+  },
+  "nav": {
+    "why-me": "Why Me?",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "why-me": {
+    "iam": "I am",
+    "location": " located in",
+    "description": "Analytical thinking, creativity and teamwork - finding solutions is what I love coding for. My focus is on clean code, performance, and delivering a great user experience. As a frontend developer, I enjoy turning designs into interactive and user-friendly interfaces.",
+    "cta": "Let's talk"
+  },
+  "skills": {
+    "headline": "I am currently learning",
+    "description": "I'm motivated to continuously improve my skills, explore new technologies, and build modern, user-friendly front-end solutions. I enjoy learning, staying up-to-date, and bringing fresh ideas into every project I work on."
+  },
+  "projects": {
+    "title": "My Projects",
+    "abouts": "About the project",
+    "organization": "How I have organized my work process",
+    "groupwork": "My group work experience",
+    "technologies": "Technologies",
+    "first": {
+      "abouts": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "organization": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes, and testing.",
+      "groupwork": "How many people were in the team and what was your role? Describe your tasks in 1–2 sentences, for example: login form, dashboard, or chat functionality. What technologies did you use? It is nice to mention good teamwork and cooperation."
+    },
+    "second": {
+      "abouts": "This project is a World of World.class application designed to explore and interact with world-class functionalities.",
+      "organization": "The project focuses on modular design and clean architecture. Each component was carefully documented and tested to ensure maintainability.",
+      "groupwork": "The team consisted of 4 members. My role was to implement the chat functionality and dashboard. We used Angular and Firebase for development."
+    },
+    "third": {
+      "abouts": "This project is a Pokedex application, allowing users to browse and learn about various Pokémon with detailed stats and abilities.",
+      "organization": "The project was structured into reusable components and emphasized clean code practices, such as meaningful variable names and modular design.",
+      "groupwork": "The team included 3 developers. My role involved creating the search functionality and Pokémon detail pages. We utilized JavaScript and REST APIs."
+    }
+  },
+  "references": {
+    "headline": "Need a teamplayer? Here's what my colleagues said about me",
+    "headline.firstline": "Need a teamplayer?",
+    "headline.secondline": "Here's what my colleagues said about me",
+    "project": "Project",
+    "reference": {
+      "first": "Working with Lukasz was excellent. With creativity, expertise, and team spirit, he significantly contributed to the project's success.",
+      "second": "Collaborating with Lukasz was fantastic. With his expertise, solution-oriented approach, and helpfulness, he significantly contributed to the success and made the work enjoyable and productive.",
+      "third": "Lukasz impresses with his quick comprehension and enthusiasm for new topics. He doesn't shy away from going the extra mile and always supports his environment with positive energy and willingness to help."
+    }
+  },
+  "contact": {
+    "heading": "Contact Me",
+    "description": "Feel free to get in touch with job offers or opportunities such as junior front-end developer, trainee, or web development roles. I'm excited to grow as a developer and contribute with clean, efficient code and a strong sense of teamwork",
+    "name-label": "Your Name",
+    "email-label": "Your Email",
+    "msg-label": "Your Message",
+    "privacy-label.beginning": "I've read the",
+    "privacy-label.anchor": "privacy policy",
+    "privacy-label.end": "and agree to the processing of my data as outlined.",
+    "button": "send"
+  },
+  "legal-notice": {
+    "headline": "Legal Notice",
+    "title": "Responsible for the Content",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "The information provided on this website is for general informational purposes only. While I strive to keep the content up to date and correct, I make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, projects, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk."
+    },
+    "external-links": {
+      "title": "External Links",
+      "content": "This website contains links to external websites (e.g., GitHub, LinkedIn, and project demos) over which I have no control. Therefore, I cannot accept any responsibility for the content of these external websites. The responsibility for the linked pages lies solely with their operators."
+    },
+    "copyright": {
+      "title": "Copyright",
+      "content": "All content on this website, including text, images, and code, is protected by copyright. Unauthorized use, reproduction, or distribution of the material is prohibited without prior written permission."
+    },
+    "data-protection": {
+      "title": "Data Protection",
+      "content": {
+        "start": "Your personal data (e.g., your name or email address submitted through the contact form) will be handled confidentially and only used to respond to your inquiries. For more details, please refer to the",
+        "anchor": "Privacy Policy",
+        "end": "(if applicable)."
+      }
+    },
+    "buttons": {
+      "back": "Back"
+    }
+  },
+  "privacy-policy": {
+    "headline": "Privacy Policy",
+    "intro": "Protecting your personal data is very important to me. This Privacy Policy explains how I collect, use, and protect the information you provide while visiting this website.",
+    "sections": {
+      "data-controller": {
+        "title": "1. Data Controller",
+        "content": "The data controller responsible for processing your personal data on this website is not included in this document."
+      },
+      "data-collection": {
+        "title": "2. Data Collection",
+        "content": "I may collect and process the following types of personal data:",
+        "point-1": "Your name and email address when you submit an inquiry through the contact form.",
+        "point-2": "Information about your use of this website (e.g., IP address, browser type, and access times) via cookies or analytics tools (if applicable)."
+      },
+      "data-processing-purpose": {
+        "title": "3. Purpose of Data Processing",
+        "content": "Your data will be used for the following purposes:",
+        "point-1": "To respond to inquiries submitted via the contact form.",
+        "point-2": "To improve the functionality and user experience of this website."
+      },
+      "legal-basis": {
+        "title": "4. Legal Basis",
+        "content": "The legal basis for processing your data is:",
+        "point-1": "Your consent, provided when submitting the contact form.",
+        "point-2": "Legitimate interests, to ensure the proper functioning of the website."
+      },
+      "data-sharing": {
+        "title": "5. Data Sharing",
+        "content": "Your personal data will not be shared with third parties unless required by law or necessary for fulfilling your request (e.g., responding to inquiries). Any third parties that process your data will do so in compliance with data protection regulations."
+      },
+      "cookies-analytics": {
+        "title": "6. Cookies and Analytics",
+        "content-before-anchor": "This website may use cookies to enhance user experience. Cookies are small text files stored on your device. You can disable cookies in your browser settings, but this may limit the functionality of the website.",
+        "analytics-content": "If analytics tools are used, they collect anonymized data about website usage to improve user experience. No personally identifiable information is collected or processed."
+      },
+      "data-retention": {
+        "title": "7. Data Retention",
+        "content": "Your personal data will be retained only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law."
+      },
+      "your-rights": {
+        "title": "8. Your Rights",
+        "content": "You have the following rights regarding your personal data:",
+        "point-1": "Right to access your data.",
+        "point-2": "Right to request correction of inaccurate or incomplete data.",
+        "point-3": "Right to request deletion of your data (“right to be forgotten”).",
+        "point-4": "Right to object to the processing of your data.",
+        "point-5": "Right to withdraw consent at any time.",
+        "contact-instruction-before-anchor": "To exercise these rights, please contact me at ",
+        "anchor-text": "this email address",
+        "contact-instruction-after-anchor": "."
+      },
+      "policy-changes": {
+        "title": "9. Changes to This Privacy Policy",
+        "content": "I reserve the right to update this Privacy Policy as needed. Any changes will be posted on this page with an updated effective date."
+      },
+      "contact": {
+        "title": "10. Contact",
+        "content-before-anchor": "If you have any questions or concerns about this Privacy Policy or your personal data, please contact me at ",
+        "anchor-text": "this email address",
+        "content-after-anchor": "."
+      }
+    },
+    "button": {
+      "back": "Back"
+    }
+  },
+  "email-confirmation": {
+    "got-it": "Got it!",
+    "thanks-message": "Thanks for getting in touch - I'll reply as soon as I can.",
+    "projects-message": "Until then, why not take a look at my projects?",
+    "button": {
+      "back": "Back"
+    },
+    "countdown-message": "Returning to main page in: {{ countdown }} seconds"
+  }
+}

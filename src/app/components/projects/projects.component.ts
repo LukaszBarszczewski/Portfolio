@@ -1,19 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [ProjectCardComponent],
+  imports: [ProjectCardComponent, TranslatePipe],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  constructor(private translate: TranslateService) { }
+
+  ngOnInit(): void {
+    
+    this.translateProjects();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.translateProjects();
+    });
+      
+  }
+  translatedProjects: any[] = [];
   projects = [
     {
       title: 'Join',
-      abouts: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-      organization: 'How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.',
-      groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
+      abouts: 'projects.first.abouts', 
+      organization: 'projects.first.organization', 
+      groupwork: 'projects.first.groupwork', 
       image: 'assets/img/join.png',
       link: 'https://github.com/johannesngl/join',
       live: 'http://join.lukasz-barszczewski.de/',
@@ -21,9 +34,9 @@ export class ProjectsComponent {
     },
     {
       title: 'World of World.class',
-      abouts: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-      organization: 'How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.',
-      groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
+      abouts: 'projects.second.abouts',
+      organization: 'projects.second.organization',
+      groupwork: 'projects.second.groupwork',
       image: 'assets/img/wowc.png',
       link: 'https://github.com/LukaszBarszczewski/World-of-World.class',
       live: 'http://world-of-world.class.lukasz-barszczewski.de/',
@@ -31,15 +44,24 @@ export class ProjectsComponent {
     },
     {
       title: 'Pokedex',
-      abouts: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-      organization: 'How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.',
-      groupwork: 'How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.What technologies did you use?It is nice to mention good teamwork and cooperation.',
+      abouts: 'projects.third.abouts',
+      organization: 'projects.third.organization',
+      groupwork: 'projects.third.groupwork',
       image: 'assets/img/pokedex.png',
       link: 'https://github.com/LukaszBarszczewski/Pokedex',
       live: 'http://pokedex.lukasz-barszczewski.de/',
       technologies: '<img src="assets/img/js-no-txt.png" alt="JavaScript"> <img src="assets/img/html-no-txt.png" alt="HTML"> <img src="assets/img/css-no-txt.png" alt="CSS">'
     }
   ];
+
+  translateProjects() {
+    this.translatedProjects = this.projects.map(project => ({
+      ...project, 
+      abouts: this.translate.instant(project.abouts), 
+      organization: this.translate.instant(project.organization),
+      groupwork: this.translate.instant(project.groupwork)
+    }));
+  }
 
   activeProjectIndex = 0;
 

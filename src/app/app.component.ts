@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeroSectionComponent } from './components/hero-section/hero-section.component';
-import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
-import { WhyMeSectionComponent } from './components/why-me-section/why-me-section.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { ReferencesComponent } from './components/references/references.component';
-import { ContactMeComponent } from './components/contact-me/contact-me.component';
-import { MySkillsComponent } from './components/my-skills/my-skills.component';
-import { FooterComponent } from './components/footer/footer.component';
+import {
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective
+} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -16,5 +13,17 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('de');
+  }
+
+  toggleLanguage() {
+    this.translate.use(
+      this.translate.currentLang === 'de' ? 'en' : 'de'
+    )
+  }
+
   title = 'portfolio';
 }

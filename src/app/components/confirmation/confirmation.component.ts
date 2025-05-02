@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-confirmation',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './confirmation.component.html',
   styleUrl: './confirmation.component.scss'
 })
@@ -20,7 +21,7 @@ export class ConfirmationComponent implements OnInit {
   ngOnInit(): void {
     let timer = setInterval(() => {
       this.countdown--;
-      if (this.countdown === 0) {
+      if (this.countdown === 9) {
         clearInterval(timer);
         this.navigateBack();
       }

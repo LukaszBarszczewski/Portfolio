@@ -3,15 +3,15 @@
 
     <div class="logo-bottom d-flex-column-center">
         <span class="creme-white anta">L.Barszczewski</span>
-        <p class="blue josefin-sans">developer</p>
+        <p class="blue josefin-sans"> {{ "hero.title" | translate }} </p>
     </div>
 
 </div>
 
 <section class="legal-notice">
-    <h1 class="headline blue anta">Legal Notice</h1>
+    <h1 class="headline blue anta">{{ 'legal-notice.headline' | translate }}</h1>
 
-    <h2 class="creme-white anta">Responsible for the Content</h2>
+    <h2 class="creme-white anta"> {{ "legal-notice.title" | translate }} </h2>
     <p class="creme-white josefin-sans">
         <strong>Lukasz Barszczewski</strong><br>
         Stuttbergstraße 31<br>
@@ -20,31 +20,29 @@
         
     </p>
 
-    <h2 class="creme-white anta">Disclaimer</h2>
+    <h2 class="creme-white anta">{{ 'legal-notice.disclaimer.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        The information provided on this website is for general informational purposes only. 
-        While I strive to keep the content up to date and correct, I make no representations or warranties of any kind, 
-        express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, 
-        projects, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+      {{ 'legal-notice.disclaimer.content' | translate }}
     </p>
 
-    <h2 class="creme-white anta">External Links</h2>
+    <h2 class="creme-white anta">{{ 'legal-notice.external-links.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        This website contains links to external websites (e.g., GitHub, LinkedIn, and project demos) over which I have no control. 
-        Therefore, I cannot accept any responsibility for the content of these external websites. 
-        The responsibility for the linked pages lies solely with their operators.
+      {{ 'legal-notice.external-links.content' | translate }}
     </p>
 
-    <h2 class="creme-white anta">Copyright</h2>
-    <p >    <p class="creme-white josefin-sans">        All content on this website, including text, images, and code, is protected by copyright. 
-        Unauthorized use, reproduction, or distribution of the material is prohibited without prior written permission.
-    </p>
-
-    <h2 class="creme-white anta">Data Protection</h2>
+    <h2 class="creme-white anta">{{ 'legal-notice.copyright.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        Your personal data (e.g., your name or email address submitted through the contact form) will be handled confidentially and only used to respond to your inquiries. 
-        For more details, please refer to the <a (click)="navigateToPrivacy()">Privacy Policy</a> (if applicable).
+      {{ 'legal-notice.copyright.content' | translate }}
     </p>
 
-    <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">Back</button>    
+    <h2 class="creme-white anta">{{ 'legal-notice.data-protection.title' | translate }}</h2>
+    <p class="creme-white josefin-sans">
+      {{ 'legal-notice.data-protection.content.start' | translate }}
+      <a (click)="navigateToPrivacy()"> {{ 'legal-notice.data-protection.content.anchor' | translate }} </a>
+      {{ 'legal-notice.data-protection.content.end' | translate }}
+    </p>
+
+    <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">
+        {{ 'legal-notice.buttons.back' | translate }}
+      </button>
 </section>

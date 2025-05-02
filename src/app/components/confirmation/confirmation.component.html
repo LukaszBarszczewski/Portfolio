@@ -3,16 +3,20 @@
 
     <div class="logo-bottom d-flex-column-center">
         <span class="creme-white anta">L.Barszczewski</span>
-        <p class="blue josefin-sans">developer</p>
+        <p class="blue josefin-sans"> {{ "hero.title" | translate }} </p>
     </div>
 
 </div>
 <section class="email-confirmation">
     <div class="confirmation-text">
-        <span class="blue anta">Got it!</span>
-        <p class="creme-white josefin-sans">Thanks for getting in touch - I'll reply as soon as I can.</p>
-        <p class="creme-white josefin-sans">Until then, why not take a look at my projects?</p>
+        <span class="blue anta">{{ 'email-confirmation.got-it' | translate }}</span>
+        <p class="creme-white josefin-sans">{{ 'email-confirmation.thanks-message' | translate }}</p>
+        <p class="creme-white josefin-sans">{{ 'email-confirmation.projects-message' | translate }}</p>
     </div>
-    <button class="btn-dark blue josefin-sans" (click)="navigateBack()">Back</button>
-    <span style="opacity: 0.7;" class="creme-white josefin-sans">Returning to main page in: {{ countdown }} seconds</span>
+    <button class="btn-dark blue josefin-sans" (click)="navigateBack()">
+        {{ 'email-confirmation.button.back' | translate }}
+    </button>
+    <span style="opacity: 0.7;" class="creme-white josefin-sans">
+        {{ 'email-confirmation.countdown-message' | translate: { countdown: countdown } }}
+    </span>
 </section>

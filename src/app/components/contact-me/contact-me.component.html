@@ -1,13 +1,11 @@
 <section class="contact-me-section gap-36 margin-80-0" id="contact">
     <div class="headline blue anta">
-        <span>Contact me</span>
+        <span> {{ "contact.heading" | translate }} </span>
     </div>
 
     <section class="get-in-touch creme-white josefin-sans">
         <div class="text">
-            <span>Feel free to get in touch with job offers or opportunities such as junior front-end developer,
-                trainee, or web development roles. I'm excited to grow as a developer and contribute with clean,
-                efficient code and a strong sense of teamwork.</span>
+            <span>{{ "contact.description" | translate }}</span>
         </div>
 
         <div class="tel-mail">
@@ -26,13 +24,13 @@
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" method="post" class="contact-form josefin-sans">
         <div class="name-and-email-inputs">
             <div class="name-and-email blue">
-                <label for="name">Your Name</label>
+                <label for="name">{{ "contact.name-label" | translate }}</label>
                 <input [(ngModel)]="contactData.name" (ngModelChange)="updateButtonState()" class="josefin-sans"
                     type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
             </div>
 
             <div class="name-and-email blue">
-                <label for="email">Your Email</label>
+                <label for="email">{{ "contact.email-label" | translate }}</label>
                 <input [(ngModel)]="contactData.email" (ngModelChange)="updateButtonState()" class="josefin-sans"
                     type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
@@ -40,7 +38,7 @@
         </div>
 
         <div class="message">
-            <label class="blue" for="message">Your Message</label>
+            <label class="blue" for="message">{{ "contact.msg-label" | translate }}</label>
             <textarea [(ngModel)]="contactData.message" (ngModelChange)="updateButtonState()" class="josefin-sans"
                 id="message" placeholder="Your Message" name="message" required></textarea>
         </div>
@@ -49,13 +47,12 @@
             <div style="display: flex; align-items: center;">
                 <input type="checkbox" id="privacy" name="privacy" required (change)="updateButtonState()">
                 <label for="privacy">
-                    I've read the <a class="blue" (click)="navigateToPrivacyPolicy()">privacy policy</a> and agree to the processing of my data as
-                    outlined.
+                    {{ "contact.privacy-label.beginning" | translate }} <a class="blue" (click)="navigateToPrivacyPolicy()">{{ "contact.privacy-label.anchor" | translate }}</a> {{ "contact.privacy-label.end" | translate }}
                 </label>
             </div>
 
             <div [style]="{ display: 'flex', justifyContent: 'flex-end' }">
-                <button class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">Send</button>
+                <button class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">{{ "contact.button" | translate }}</button>
             </div>
         </div>
     </form>

@@ -8,21 +8,27 @@
                 <p class="josefin-sans" style="color: rgba(38, 46, 52, 1);">developer</p>
             </div>
         </div>
+        <div class="menu-system-titles">
+            <div class="menu-button josefin-sans">
+                <a href="#why-me">{{ "nav.why-me" | translate }}</a>
+            </div>
 
-        <div class="menu-button josefin-sans">
-            <a href="#why-me">Why me</a>
+            <div class="menu-button josefin-sans">
+                <a href="#skills">{{ "nav.skills" | translate }}</a>
+            </div>
+
+            <div class="menu-button josefin-sans">
+                <a href="#projects">{{ "nav.projects" | translate }}</a>
+            </div>
+
+            <div class="menu-button josefin-sans">
+                <a href="#contact">{{ "nav.contact" | translate }}</a>
+            </div>
         </div>
 
-        <div class="menu-button josefin-sans">
-            <a href="#skills">Skills</a>
-        </div>
-
-        <div class="menu-button josefin-sans">
-            <a href="#projects">Projects</a>
-        </div>
-        
-        <div class="menu-button josefin-sans">
-            <a href="#contact">Contact</a>
+        <div class="menu-bar-buttons">
+            <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'de'" id="de">DE</button>
+            <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'en'" id="en">EN</button>
         </div>
     </div>
 </section>

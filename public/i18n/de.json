@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "title": "entwickler",
+    "job": "FRONTEND ENTWICKLER"
+  },
+  "nav": {
+    "why-me": "Warum Ich?",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "why-me": {
+    "iam": "Mein Standort",
+    "location": "ist",
+    "description": "Analytisches Denken, Kreativität und Teamarbeit – Lösungen zu finden, ist der Grund, warum ich das Programmieren liebe. Mein Fokus liegt auf sauberem Code, Performance und der Bereitstellung eines großartigen Nutzererlebnisses. Als Frontend-Entwickler genieße ich es, Designs in interaktive und benutzerfreundliche Oberflächen zu verwandeln.",
+    "cta": "Schreib mir"
+  },
+  "skills": {
+    "headline": "Ich lerne gerade",
+    "description": "Ich bin motiviert, meine Fähigkeiten kontinuierlich zu verbessern, neue Technologien zu erkunden und moderne, benutzerfreundliche Frontend-Lösungen zu entwickeln. Ich lerne gerne, bleibe auf dem neuesten Stand und bringe frische Ideen in jedes Projekt ein, an dem ich arbeite."
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "abouts": "Über das Projekt",
+    "organization": "Wie habe ich meine Arbeit organisiert",
+    "groupwork": "Meine Gruppenarbeits Erfahrungen",
+    "technologies": "Technologien",
+    "first": {
+      "abouts": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
+      "organization": "Wie halten Sie Ihren Code sauber und wartbar? Haben Sie das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Konzentrieren Sie sich auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
+      "groupwork": "Wie viele Personen waren im Team und welche Rolle hatten Sie? Beschreiben Sie Ihre Aufgaben in 1–2 Sätzen, zum Beispiel: Login-Formular, Dashboard oder Chat-Funktionalität. Welche Technologien haben Sie verwendet? Es ist schön, gute Teamarbeit und Zusammenarbeit zu erwähnen."
+    },
+    "second": {
+      "abouts": "Dieses Projekt ist eine World of World.class-Anwendung, die entwickelt wurde, um erstklassige Funktionalitäten zu erkunden und zu nutzen.",
+      "organization": "Das Projekt konzentriert sich auf modulares Design und saubere Architektur. Jede Komponente wurde sorgfältig dokumentiert und getestet, um die Wartbarkeit zu gewährleisten.",
+      "groupwork": "Das Team bestand aus 4 Mitgliedern. Meine Rolle war die Implementierung der Chat-Funktionalität und des Dashboards. Wir haben Angular und Firebase für die Entwicklung verwendet."
+    },
+    "third": {
+      "abouts": "Dieses Projekt ist eine Pokedex-Anwendung, die es Benutzern ermöglicht, verschiedene Pokémon mit detaillierten Statistiken und Fähigkeiten zu durchsuchen und kennenzulernen.",
+      "organization": "Das Projekt wurde in wiederverwendbare Komponenten unterteilt und legte großen Wert auf saubere Codepraktiken, wie aussagekräftige Variablennamen und modulares Design.",
+      "groupwork": "Das Team bestand aus 3 Entwicklern. Meine Rolle umfasste die Erstellung der Suchfunktionalität und der Pokémon-Detailseiten. Wir haben JavaScript und REST-APIs genutzt."
+    }
+  },
+  "references": {
+    "headline": "Brauchen Sie einen Teamplayer? Das sagen meine Kollegen über mich",
+    "headline.firstline": "Brauchen Sie einen Teamplayer?",
+    "headline.secondline": "Das sagen meine Kollegen über mich",
+    "project": "Projekt",
+    "reference": {
+      "first": "Die Zusammenarbeit mit Lukasz war ausgezeichnet. Mit Kreativität, Know-how und Teamgeist trug er wesentlich zum Projekterfolg bei.",
+      "second": "Die Zusammenarbeit mit Lukasz war großartig. Mit seinem Know-how, seiner lösungsorientierten Art und Hilfsbereitschaft trug er maßgeblich zum Erfolg bei und machte die Arbeit angenehm und produktiv.",
+      "third": "Lukasz beeindruckt durch seine schnelle Auffassungsgabe und Begeisterung für neue Themen. Er scheut keine Extrameile und unterstützt sein Umfeld stets hilfsbereit und mit positiver Energie."
+    }
+  },
+  "contact": {
+    "heading": "Kontaktieren Sie mich",
+    "description": "Gerne können Sie mich für Jobangebote oder Möglichkeiten wie Junior-Frontend-Entwickler, Trainee oder Webentwicklungsrollen kontaktieren. Ich freue mich darauf, mich als Entwickler weiterzuentwickeln und mit sauberem, effizientem Code sowie einem starken Teamgeist beizutragen.",
+    "name-label": "Ihr Name",
+    "email-label": "Ihre E-Mail",
+    "msg-label": "Ihre Nachricht",
+    "privacy-label.beginning": "Ich habe die ",
+    "privacy-label.anchor": "Datenschutzerklärung",
+    "privacy-label.end": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bedingungen zu.",
+    "button": "Senden"
+  },
+  "legal-notice": {
+    "headline": "Impressum",
+    "title": "Verantwortlich für den Inhalt",
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": "Die auf dieser Website bereitgestellten Informationen dienen ausschließlich allgemeinen Informationszwecken. Obwohl ich bemüht bin, die Inhalte aktuell und korrekt zu halten, übernehme ich keine Garantie, weder ausdrücklich noch stillschweigend, für die Vollständigkeit, Richtigkeit, Zuverlässigkeit, Eignung oder Verfügbarkeit in Bezug auf die Website oder die Informationen, Projekte oder damit verbundenen Grafiken, die auf der Website enthalten sind, für irgendeinen Zweck. Jegliches Vertrauen, das Sie auf solche Informationen setzen, erfolgt daher ausschließlich auf Ihr eigenes Risiko."
+    },
+    "external-links": {
+      "title": "Externe Links",
+      "content": "Diese Website enthält Links zu externen Websites (z. B. GitHub, LinkedIn und Projekt-Demos), auf deren Inhalte ich keinen Einfluss habe. Daher kann ich für die Inhalte dieser externen Websites keine Verantwortung übernehmen. Die Verantwortung für die verlinkten Seiten liegt ausschließlich bei deren Betreibern."
+    },
+    "copyright": {
+      "title": "Urheberrecht",
+      "content": "Alle Inhalte auf dieser Website, einschließlich Texte, Bilder und Code, sind urheberrechtlich geschützt. Die unbefugte Nutzung, Vervielfältigung oder Verbreitung des Materials ist ohne vorherige schriftliche Genehmigung untersagt."
+    },
+    "data-protection": {
+      "title": "Datenschutz",
+      "content": {
+        "start": "Ihre persönlichen Daten (z. B. Ihr Name oder Ihre E-Mail-Adresse, die über das Kontaktformular übermittelt werden) werden vertraulich behandelt und nur verwendet, um auf Ihre Anfragen zu antworten. Weitere Einzelheiten finden Sie in der",
+        "anchor": "Datenschutzerklärung",
+        "end": "(falls zutreffend)."
+      }
+    },
+    "buttons": {
+      "back": "Zurück"
+    }
+  },
+  "privacy-policy": {
+    "headline": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist mir sehr wichtig. Diese Datenschutzerklärung erklärt, wie ich die von Ihnen bereitgestellten Informationen während Ihres Besuchs auf dieser Website sammle, verwende und schütze.",
+    "sections": {
+      "data-controller": {
+        "title": "1. Verantwortlicher für die Datenverarbeitung",
+        "content": "Der für die Verarbeitung Ihrer personenbezogenen Daten auf dieser Website Verantwortliche ist in diesem Dokument nicht enthalten."
+      },
+      "data-collection": {
+        "title": "2. Datenerhebung",
+        "content": "Ich kann die folgenden Arten von personenbezogenen Daten sammeln und verarbeiten:",
+        "point-1": "Ihr Name und Ihre E-Mail-Adresse, wenn Sie über das Kontaktformular eine Anfrage senden.",
+        "point-2": "Informationen über Ihre Nutzung dieser Website (z. B. IP-Adresse, Browsertyp und Zugriffszeiten) über Cookies oder Analysetools (falls zutreffend)."
+      },
+      "data-processing-purpose": {
+        "title": "3. Zweck der Datenverarbeitung",
+        "content": "Ihre Daten werden für die folgenden Zwecke verwendet:",
+        "point-1": "Um auf Anfragen zu antworten, die über das Kontaktformular eingereicht werden.",
+        "point-2": "Um die Funktionalität und Benutzererfahrung dieser Website zu verbessern."
+      },
+      "legal-basis": {
+        "title": "4. Rechtsgrundlage",
+        "content": "Die Rechtsgrundlage für die Verarbeitung Ihrer Daten ist:",
+        "point-1": "Ihre Einwilligung, die Sie beim Absenden des Kontaktformulars erteilen.",
+        "point-2": "Berechtigte Interessen, um den ordnungsgemäßen Betrieb der Website sicherzustellen."
+      },
+      "data-sharing": {
+        "title": "5. Datenweitergabe",
+        "content": "Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben oder zur Erfüllung Ihrer Anfrage erforderlich (z. B. zur Beantwortung von Anfragen). Alle Dritten, die Ihre Daten verarbeiten, tun dies in Übereinstimmung mit den Datenschutzvorschriften."
+      },
+      "cookies-analytics": {
+        "title": "6. Cookies und Analysen",
+        "content-before-anchor": "Diese Website kann Cookies verwenden, um die Benutzererfahrung zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, dies kann jedoch die Funktionalität der Website einschränken.",
+        "analytics-content": "Falls Analysetools verwendet werden, erfassen diese anonymisierte Daten über die Nutzung der Website, um die Benutzererfahrung zu verbessern. Es werden keine personenbezogenen Daten erfasst oder verarbeitet."
+      },
+      "data-retention": {
+        "title": "7. Aufbewahrung von Daten",
+        "content": "Ihre personenbezogenen Daten werden nur so lange gespeichert, wie es für die in dieser Datenschutzerklärung genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben ist."
+      },
+      "your-rights": {
+        "title": "8. Ihre Rechte",
+        "content": "Sie haben folgende Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "point-1": "Recht auf Zugang zu Ihren Daten.",
+        "point-2": "Recht auf Berichtigung unrichtiger oder unvollständiger Daten.",
+        "point-3": "Recht auf Löschung Ihrer Daten („Recht auf Vergessenwerden“).",
+        "point-4": "Recht auf Widerspruch gegen die Verarbeitung Ihrer Daten.",
+        "point-5": "Recht, Ihre Einwilligung jederzeit zu widerrufen.",
+        "contact-instruction-before-anchor": "Um diese Rechte auszuüben, kontaktieren Sie mich bitte unter ",
+        "anchor-text": "dieser E-Mail-Adresse",
+        "contact-instruction-after-anchor": "."
+      },
+      "policy-changes": {
+        "title": "9. Änderungen dieser Datenschutzerklärung",
+        "content": "Ich behalte mir das Recht vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht."
+      },
+      "contact": {
+        "title": "10. Kontakt",
+        "content-before-anchor": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder Ihren personenbezogenen Daten haben, kontaktieren Sie mich bitte unter ",
+        "anchor-text": "dieser E-Mail-Adresse",
+        "content-after-anchor": "."
+      }
+    },
+    "button": {
+      "back": "Zurück"
+    }
+  },
+  "email-confirmation": {
+    "got-it": "Alles klar!",
+    "thanks-message": "Vielen Dank, dass Sie sich gemeldet haben - ich antworte so schnell wie möglich.",
+    "projects-message": "Bis dahin, warum schauen Sie sich nicht meine Projekte an?",
+    "button": {
+      "back": "Zurück"
+    },
+    "countdown-message": "Zurück zur Hauptseite in: {{ countdown }} Sekunden"
+  }
+}

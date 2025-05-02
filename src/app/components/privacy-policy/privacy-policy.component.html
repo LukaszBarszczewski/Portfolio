@@ -3,20 +3,20 @@
 
     <div class="logo-bottom d-flex-column-center">
         <span class="creme-white anta">L.Barszczewski</span>
-        <p class="blue josefin-sans">developer</p>
+        <p class="blue josefin-sans"> {{ "hero.title" | translate }} </p>
     </div>
 
 </div>
 <section class="privacy-policy">
-    <h1 class="headline blue anta">Privacy Policy</h1>
+    <h1 class="headline blue anta">{{ 'privacy-policy.headline' | translate }}</h1>
 
     <p class="creme-white josefin-sans">
-        Protecting your personal data is very important to me. This Privacy Policy explains how I collect, use, and protect the information you provide while visiting this website.
+        {{ 'privacy-policy.intro' | translate }}
     </p>
 
-    <h2 class="creme-white anta">1. Data Controller</h2>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.data-controller.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        The data controller responsible for processing your personal data on this website is:
+        {{ 'privacy-policy.sections.data-controller.content' | translate }}
     </p>
     <p class="creme-white josefin-sans">
         <strong>Lukasz Barszczewski</strong><br>
@@ -25,71 +25,74 @@
         <a href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a><br>
     </p>
 
-    <h2 class="creme-white anta">2. Data Collection</h2>
-    <p class="creme-white josefin-sans">I may collect and process the following types of personal data:</p>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.data-collection.title' | translate }}</h2>
+    <p class="creme-white josefin-sans">
+        {{ 'privacy-policy.sections.data-collection.content' | translate }}
+    </p>
     <ul>
-        <li>Your name and email address when you submit an inquiry through the contact form.</li>
-        <li>Information about your use of this website (e.g., IP address, browser type, and access times) via cookies or analytics tools (if applicable).</li>
+        <li>{{ 'privacy-policy.sections.data-collection.point-1' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.data-collection.point-2' | translate }}</li>
     </ul>
 
-    <h2 class="creme-white anta">3. Purpose of Data Processing</h2>
-    <p class="creme-white josefin-sans">Your data will be used for the following purposes:</p>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.data-processing-purpose.title' | translate }}</h2>
+    <p class="creme-white josefin-sans">
+        {{ 'privacy-policy.sections.data-processing-purpose.content' | translate }}
+    </p>
     <ul>
-        <li>To respond to inquiries submitted via the contact form.</li>
-        <li>To improve the functionality and user experience of this website.</li>
+        <li>{{ 'privacy-policy.sections.data-processing-purpose.point-1' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.data-processing-purpose.point-2' | translate }}</li>
     </ul>
 
-    <h2 class="creme-white anta">4. Legal Basis</h2>
-    <p class="creme-white josefin-sans">The legal basis for processing your data is:</p>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.legal-basis.title' | translate }}</h2>
+    <p class="creme-white josefin-sans">
+        {{ 'privacy-policy.sections.legal-basis.content' | translate }}
+    </p>
     <ul>
-        <li>Your consent, provided when submitting the contact form.</li>
-        <li>Legitimate interests, to ensure the proper functioning of the website.</li>
+        <li>{{ 'privacy-policy.sections.legal-basis.point-1' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.legal-basis.point-2' | translate }}</li>
     </ul>
 
-    <h2 class="creme-white anta">5. Data Sharing</h2>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.data-sharing.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        Your personal data will not be shared with third parties unless required by law or necessary for fulfilling your request (e.g., responding to inquiries). <br>
-        Any third parties that process your data will do so in compliance with data protection regulations.
+        {{ 'privacy-policy.sections.data-sharing.content' | translate }}
     </p>
 
-    <h2 class="creme-white anta">6. Cookies and Analytics</h2>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.cookies-analytics.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        This website may use cookies to enhance user experience. Cookies are small text files stored on your device. <br>
-        You can disable cookies in your browser settings, but this may limit the functionality of the website.
+        {{ 'privacy-policy.sections.cookies-analytics.content-before-anchor' | translate }}
+    </p>
+    <p class="creme-white josefin-sans">
+        {{ 'privacy-policy.sections.cookies-analytics.analytics-content' | translate }}
     </p>
 
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.data-retention.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        
+        {{ 'privacy-policy.sections.data-retention.content' | translate }}
     </p>
+    
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.your-rights.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        If analytics tools are used, they collect anonymized data about website usage to improve user experience. <br> 
-        No personally identifiable information is collected or processed.
+        {{ 'privacy-policy.sections.your-rights.content' | translate }}
     </p>
-
-    <h2 class="creme-white anta">7. Data Retention</h2>
-    <p class="creme-white josefin-sans">
-        Your personal data will be retained only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.
-    </p>
-
-    <h2 class="creme-white anta">8. Your Rights</h2>
-    <p class="creme-white josefin-sans">You have the following rights regarding your personal data:</p>
     <ul>
-        <li>Right to access your data.</li>
-        <li>Right to request correction of inaccurate or incomplete data.</li>
-        <li>Right to request deletion of your data (“right to be forgotten”).</li>
-        <li>Right to object to the processing of your data.</li>
-        <li>Right to withdraw consent at any time.</li>
+        <li>{{ 'privacy-policy.sections.your-rights.point-1' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.your-rights.point-2' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.your-rights.point-3' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.your-rights.point-4' | translate }}</li>
+        <li>{{ 'privacy-policy.sections.your-rights.point-5' | translate }}</li>
     </ul>
     <p class="creme-white josefin-sans">
-        To exercise these rights, please contact me at <a href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a>.
+        {{ 'privacy-policy.sections.your-rights.contact-instruction-before-anchor' | translate }}
+        <a href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a>.
+        {{ 'privacy-policy.sections.your-rights.contact-instruction-after-anchor' | translate }}
     </p>
 
-    <h2 class="creme-white anta">9. Changes to This Privacy Policy</h2>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.policy-changes.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
-        I reserve the right to update this Privacy Policy as needed. Any changes will be posted on this page with an updated effective date.
+        {{ 'privacy-policy.sections.policy-changes.content' | translate }}
     </p>
 
-    <h2 class="creme-white anta">10. Contact</h2>
+    <h2 class="creme-white anta">{{ 'privacy-policy.sections.contact.title' | translate }}</h2>
     <p class="creme-white josefin-sans">
         If you have any questions or concerns about this Privacy Policy or your personal data, please contact me at:
     </p>
@@ -98,5 +101,7 @@
         <a href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a>
     </p>
 
-    <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">Back</button>    
+    <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">
+        {{ 'privacy-policy.button.back' | translate }}
+    </button>
 </section>

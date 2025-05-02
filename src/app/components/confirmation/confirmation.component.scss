@@ -1,13 +1,16 @@
 @import "../../../styles.scss";
 
 .email-confirmation {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+
 
   .confirmation-text {
     justify-items: center;
+    text-align: center;
     
     span {
       font-size: 60px;
