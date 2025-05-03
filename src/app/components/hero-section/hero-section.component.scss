@@ -137,7 +137,7 @@
     .menu-resp {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 24px;
     }
 
     @include respond(large) {
