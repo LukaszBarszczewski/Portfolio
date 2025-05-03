@@ -43,7 +43,7 @@
 
             .currently-learning-img {
                 display: flex;
-                gap:24px;
+                gap: 24px;
                 justify-content: center;
 
                 img {
@@ -71,6 +71,10 @@
         }
 
         .currently-learning-resp {
+            p {
+                font-size: 24px;
+            }
+
             .currently-learning-resp-description {
                 align-items: center;
                 display: flex;
