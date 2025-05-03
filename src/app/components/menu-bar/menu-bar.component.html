@@ -14,7 +14,7 @@
             </div>
 
             <div class="menu-button josefin-sans">
-                <a href="#skills">{{ "nav.skills" | translate }}</a>
+                <a href="#skills">Skills</a>
             </div>
 
             <div class="menu-button josefin-sans">
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="menu-bar-buttons">
+        <div class="menu-bar-buttons-switch-language">
             <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'de'" id="de">DE</button>
             <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'en'" id="en">EN</button>
         </div>

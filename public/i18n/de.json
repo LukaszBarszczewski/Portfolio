@@ -1,11 +1,10 @@
 {
   "hero": {
-    "title": "entwickler",
     "job": "FRONTEND ENTWICKLER"
   },
   "nav": {
     "why-me": "Warum Ich?",
-    "skills": "Fähigkeiten",
+    "skills": "Meine Skills",
     "projects": "Projekte",
     "contact": "Kontakt"
   },

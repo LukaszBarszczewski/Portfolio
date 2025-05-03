@@ -21,24 +21,32 @@
             width: 66%;
         }
 
-        .menu-bar-buttons {
+        .menu-bar-buttons-switch-language {
             display:flex;
             gap: 6px;
+
             button {
-                background: url('/assets/img/ellipse.png') no-repeat center center;
                 background-size: contain;
+                background: url('/assets/img/ellipse.png') no-repeat center center;
                 border: 0;
-                color: rgba(248, 245, 236, 1);
-                padding: 0;
+                color: #262E34;
+                cursor: pointer;
                 font-family: 'JosefinSans';
+                padding: 10px;
                 
                 &:disabled {
-                    color: #262E34;
+                    background-image: url('/assets/img/ellipse-menu.png');
+                    color: rgba(248, 245, 236, 1);
+                    opacity: 1 !important;
+                }
+
+                &:hover {
+                    background-image: url('/assets/img/ellipse-menu.png');
+                    color: rgba(248, 245, 236, 1);
+                    opacity: 0.7;
+                    transition: color 0.3s ease-in-out;
                 }
             }
-
-            
-            
         }
     }
 }

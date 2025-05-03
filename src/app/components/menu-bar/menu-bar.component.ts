@@ -13,5 +13,4 @@ export class MenuBarComponent {
   toggleLanguage() {
     this.translate.use( this.translate.currentLang === "en" ? "de" : "en");
   }
-
 }
