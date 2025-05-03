@@ -123,6 +123,8 @@
 
   @include respond(medium) {
     .title-resp {
+      text-align: center;
+
       span {
         font-size: 28px;
       }
