@@ -26,13 +26,13 @@
             <div class="name-and-email blue">
                 <label for="name">{{ "contact.name-label" | translate }}</label>
                 <input [(ngModel)]="contactData.name" (ngModelChange)="updateButtonState()" class="josefin-sans"
-                    type="text" placeholder="Your Name" id="name" name="name" required autocomplete="off">
+                    type="text" [placeholder]="'contact.name-label' | translate" id="name" name="name" required autocomplete="off">
             </div>
 
             <div class="name-and-email blue">
                 <label for="email">{{ "contact.email-label" | translate }}</label>
                 <input [(ngModel)]="contactData.email" (ngModelChange)="updateButtonState()" class="josefin-sans"
-                    type="email" placeholder="Your Email" id="email" name="email" required autocomplete="off"
+                    type="email" [placeholder]="'contact.email-label' | translate" id="email" name="email" required autocomplete="off"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="message">
             <label class="blue" for="message">{{ "contact.msg-label" | translate }}</label>
             <textarea [(ngModel)]="contactData.message" (ngModelChange)="updateButtonState()" class="josefin-sans"
-                id="message" placeholder="Your Message" name="message" required></textarea>
+                id="message" [placeholder]="'contact.msg-label' | translate" name="message" required></textarea>
         </div>
 
         <div class="checkbox-container creme-white">
