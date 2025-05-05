@@ -22,22 +22,22 @@
     "title": "Meine Projekte",
     "abouts": "Über das Projekt",
     "organization": "Wie habe ich meine Arbeit organisiert",
-    "groupwork": "Meine Gruppenarbeits Erfahrungen",
+    "groupwork": "Meine Gruppenarbeitserfahrungen",
     "technologies": "Technologien",
     "first": {
-      "abouts": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
-      "organization": "Wie halten Sie Ihren Code sauber und wartbar? Haben Sie das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Konzentrieren Sie sich auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
-      "groupwork": "Wie viele Personen waren im Team und welche Rolle hatten Sie? Beschreiben Sie Ihre Aufgaben in 1–2 Sätzen, zum Beispiel: Login-Formular, Dashboard oder Chat-Funktionalität. Welche Technologien haben Sie verwendet? Es ist schön, gute Teamarbeit und Zusammenarbeit zu erwähnen."
+      "abouts": "Diese App ist ein Kanban-Projektmanagement-Tool. Sie vereinfacht die Aufgabenorganisation mit Drag-and-Drop-Boards, Echtzeit-Statusaktualisierungen und einer klaren, intuitiven Oberfläche für effiziente Teamarbeit.",
+      "organization": "Der Code ist in klare, modulare Funktionen gegliedert, mit gut benannten Variablen und Dateien. Logik und DOM-Manipulation sind sauber getrennt, um das Projekt wartbar und leicht verständlich zu halten.",
+      "groupwork": "Unser Team bestand aus drei Personen. Ich war verantwortlich für die Startseite, das Login- und das Sign-up-Formular und habe außerdem meine Teammitglieder bei ihren Aufgaben unterstützt. Wir haben das Projekt mit JavaScript, HTML, CSS und Firebase umgesetzt und eng zusammengearbeitet, um ein einheitliches Ergebnis zu erzielen."
     },
     "second": {
-      "abouts": "Dieses Projekt ist eine World of World.class-Anwendung, die entwickelt wurde, um erstklassige Funktionalitäten zu erkunden und zu nutzen.",
+      "abouts": "Dieses Projekt ist ein selbstgemachtes 2D-Spiel, das entwickelt wurde, um world-class Funktionalitäten zu erkunden und in der Praxis anzuwenden.",
       "organization": "Das Projekt konzentriert sich auf modulares Design und saubere Architektur. Jede Komponente wurde sorgfältig dokumentiert und getestet, um die Wartbarkeit zu gewährleisten.",
-      "groupwork": "Das Team bestand aus 4 Mitgliedern. Meine Rolle war die Implementierung der Chat-Funktionalität und des Dashboards. Wir haben Angular und Firebase für die Entwicklung verwendet."
+      "groupwork": "Dies war ein Solo-Projekt."
     },
     "third": {
-      "abouts": "Dieses Projekt ist eine Pokedex-Anwendung, die es Benutzern ermöglicht, verschiedene Pokémon mit detaillierten Statistiken und Fähigkeiten zu durchsuchen und kennenzulernen.",
-      "organization": "Das Projekt wurde in wiederverwendbare Komponenten unterteilt und legte großen Wert auf saubere Codepraktiken, wie aussagekräftige Variablennamen und modulares Design.",
-      "groupwork": "Das Team bestand aus 3 Entwicklern. Meine Rolle umfasste die Erstellung der Suchfunktionalität und der Pokémon-Detailseiten. Wir haben JavaScript und REST-APIs genutzt."
+      "abouts": "Dieses Projekt ist eine Pokedex-Anwendung, die es Benutzern ermöglicht, verschiedene Pokémon mit detaillierten Statistiken und Fähigkeiten zu durchsuchen und kennenzulernen. Hier lag der Fokus auf der Kommunikation mit APIs.",
+      "organization": "Das Projekt legte großen Wert auf saubere Codepraktiken, wie aussagekräftige Variablennamen und modulares Design.",
+      "groupwork": "Dies war ein Solo-Projekt."
     }
   },
   "references": {

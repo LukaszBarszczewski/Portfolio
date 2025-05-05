@@ -26,19 +26,19 @@
     "groupwork": "My group work experience",
     "technologies": "Technologies",
     "first": {
-      "abouts": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "organization": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes, and testing.",
-      "groupwork": "How many people were in the team and what was your role? Describe your tasks in 1–2 sentences, for example: login form, dashboard, or chat functionality. What technologies did you use? It is nice to mention good teamwork and cooperation."
+      "abouts": "This app is a Kanban Project Management Tool. It streamlines task organization with drag-and-drop boards, real-time status updates, and a clean, intuitive interface for efficient team workflow.",
+      "organization": "The code is organized into clear, modular functions with well-named variables and files. Logic and DOM manipulation are cleanly separated to keep the project maintainable and easy to understand.",
+      "groupwork": "Our team consisted of three people. I was responsible for the homepage, the login and sign-up forms, and also supported my teammates with their tasks. We built the project using JavaScript, HTML, CSS, and Firebase, working closely together to achieve a consistent result."
     },
     "second": {
-      "abouts": "This project is a World of World.class application designed to explore and interact with world-class functionalities.",
+      "abouts": "This project is a self-made 2D game designed to explore and interact with world-class functionalities.",
       "organization": "The project focuses on modular design and clean architecture. Each component was carefully documented and tested to ensure maintainability.",
-      "groupwork": "The team consisted of 4 members. My role was to implement the chat functionality and dashboard. We used Angular and Firebase for development."
+      "groupwork": "This was a solo-project."
     },
     "third": {
-      "abouts": "This project is a Pokedex application, allowing users to browse and learn about various Pokémon with detailed stats and abilities.",
-      "organization": "The project was structured into reusable components and emphasized clean code practices, such as meaningful variable names and modular design.",
-      "groupwork": "The team included 3 developers. My role involved creating the search functionality and Pokémon detail pages. We utilized JavaScript and REST APIs."
+      "abouts": "This project is a Pokedex application, allowing users to browse and learn about various Pokémon with detailed stats and abilities. The focus was on communication with APIs.",
+      "organization": "The project placed great emphasis on clean code practices, such as meaningful variable names and modular design.",
+      "groupwork": "This was a solo-project."
     }
   },
   "references": {
