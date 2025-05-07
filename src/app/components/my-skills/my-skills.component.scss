@@ -7,6 +7,10 @@
     flex-direction: column;
     gap: 80px;
 
+    .headline {
+        text-align: center;
+    }
+
     .skills {
         display: flex;
         gap: 80px;
@@ -24,6 +28,20 @@
             gap: 40px;
             justify-content: space-between;
             max-width: 340px;
+
+            .icons-and-txt {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                font-size: 16px;
+                gap: 8px;
+                text-align: center;
+
+                img {
+                    height: 64px;
+                    width: 64px;
+                }
+            }
 
             @include respond(small) {
                 gap: 10px;
@@ -43,11 +61,20 @@
 
             .currently-learning-img {
                 display: flex;
-                gap: 24px;
+                gap: 32px;
                 justify-content: center;
 
+                .currently-learning-icons-and-txt {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                    gap: 8px;
+                    text-align: center;
+                }
+
                 img {
-                    height: 50px;
+                    height: 40px;
                     width: 40px;
                 }
             }
@@ -98,7 +125,7 @@
                 transform: translate(-50%, -50%);
 
                 img {
-                    height: 50px;
+                    height: 40px;
                     width: 40px;
                 }
             }
