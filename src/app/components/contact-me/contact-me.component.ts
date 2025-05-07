@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -13,12 +14,14 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 })
 export class ContactMeComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
 
   isDisabled: boolean = true;
 
   navigateToPrivacyPolicy() {
-    this.router.navigateByUrl('/privacy');
+    this.router.navigateByUrl('/privacy').then(() => {
+      this.viewportScroller.scrollToPosition([0, 0]);
+    });;
   }
 
   updateButtonState() {

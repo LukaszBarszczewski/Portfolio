@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -9,8 +10,10 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  constructor(private router:Router) {}
+  constructor(private router:Router, private viewportScroller: ViewportScroller) {}
   navigateToLegal() {
-    this.router.navigateByUrl('/legal');
+    this.router.navigateByUrl('/legal').then(() => {
+      this.viewportScroller.scrollToPosition([0, 0]);
+    });;
   }
 }
