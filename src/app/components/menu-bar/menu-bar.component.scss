@@ -3,7 +3,10 @@
 
 .menu-bar {
     background-color: rgba(137, 188, 217, 1);
+    position: sticky;
+    top: 0;
     width: 101vw;
+    z-index: 9999;
 
     @include respond(large) {
         display: none;
