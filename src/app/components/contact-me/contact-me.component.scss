@@ -6,7 +6,10 @@
   flex-direction: column;
 
   .headline {
+    text-align: center;
+
     @include respond(xsmall) {
+      font-size: 38px;
       margin: 0 16px;
       text-align: center;
     }
@@ -30,6 +33,7 @@
 
     .text {
       width: 50%;
+      text-align: center;
     }
 
     .icon-text {

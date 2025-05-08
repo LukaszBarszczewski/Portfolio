@@ -58,11 +58,11 @@
   }
 
   @include respond(small) {
-    min-height: 1000px;
+    min-height: 1100px;
   }
 
   @include respond(xsmall) {
-    min-height: 1100px;
+    min-height: 1200px;
   }
 }
 
