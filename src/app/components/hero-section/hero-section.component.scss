@@ -49,6 +49,27 @@
                 position: absolute;
                 top: 50%;
                 transform: translate(-50%, -50%);
+
+                img {
+                    width: 600px;
+
+                    @include respond(xlarge) {
+                        clip-path: ellipse(59% 56% at 47% 48%);
+                        margin-bottom: 120px;
+                        width: 550px;
+                    }
+
+                    @include respond(medium) {
+                        margin-bottom: 90px;
+                        width: 450px;
+                    }
+
+                    @include respond(small) {
+                        clip-path: ellipse(55% 55% at 48% 51%);
+                        margin-bottom: 78px;
+                        width: 280px;
+                    }
+                }
             }
         }
 
