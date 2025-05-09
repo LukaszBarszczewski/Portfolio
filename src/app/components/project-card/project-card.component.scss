@@ -2,15 +2,27 @@
 
 
 .project-card {
-  align-items: center;
   animation: fadeSlideIn 2s ease-out forwards;
   background: #89bcd912;
   display: flex;
-  flex: 2 1;
-  gap: 40px;
-  justify-content: space-around;
+  justify-content: center;
   padding: 15px 0;
   width: 100vw;
+
+  .project-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1440px;
+    width: 100%;
+
+    @include respond(large) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 
   .live-test-resp {
     display: none;

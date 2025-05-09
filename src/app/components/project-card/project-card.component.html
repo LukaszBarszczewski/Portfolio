@@ -1,83 +1,85 @@
-<div class="project-card">
-  <div class="img-resp d-none">
-    <div class="technologies-img" [innerHTML]="technologies"></div>
+<section class="project-card">
+  <div class="project-inner">
+    <div class="img-resp d-none">
+      <div class="technologies-img" [innerHTML]="technologies"></div>
 
-    <img class="screenshot" [style.width]="'450px'" [style.height]="'216px'" [style.borderRadius]="'30px'"
-      [style.margin-top]="'16px'" [src]="image" [alt]="title">
-  </div>
-
-  <div class="project-descriptions">
-    <ul>
-      <section class="project-description-section gap-36">
-        <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
-
-        <div class="project-description">
-          <div class="ellipse-resp">
-            <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p> {{ "projects.abouts" | translate }}  </p>
-          </div>
-
-          <li>
-            <span>{{ abouts }}</span>
-          </li>
-        </div>
-      </section>
-
-      <section class="project-description-section gap-36">
-        <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
-
-        <div class="project-description">
-          <div class="ellipse-resp">
-            <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p>{{ "projects.organization" | translate }}</p>
-          </div>
-
-          <li>
-            <span>{{ organization }}</span>
-          </li>
-        </div>
-      </section>
-
-      <section class="project-description-section gap-36">
-        <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
-
-        <div class="project-description">
-          <div class="ellipse-resp">
-            <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
-            <p> {{ "projects.groupwork" | translate }} </p>
-          </div>
-
-          <li>
-            <span>{{ groupwork }}</span>
-          </li>
-        </div>
-      </section>
-    </ul>
-
-    <div class="live-test-resp">
-      <a [href]="live" target="_blank" rel="noopener noreferrer">
-        <button class="btn-light josefin-sans">Live Test</button>
-      </a>
-      <a [href]="link" target="_blank" rel="noopener noreferrer">
-        <button class="btn-dark blue josefin-sans">GitHub</button>
-      </a>
+      <img class="screenshot" [style.width]="'400px'" [style.height]="'220px'" [style.borderRadius]="'30px'"
+        [style.margin-top]="'16px'" [src]="image" [alt]="title">
     </div>
-  </div>
 
-  <div class="project-test-section">
-    <span>{{ "projects.technologies" | translate }}</span>
+    <div class="project-descriptions">
+      <ul>
+        <section class="project-description-section gap-36">
+          <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
 
-    <div class="technologies-img" [innerHTML]="technologies"></div>
+          <div class="project-description">
+            <div class="ellipse-resp">
+              <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
+              <p> {{ "projects.abouts" | translate }} </p>
+            </div>
 
-    <img [style.width]="'450px'" [style.height]="'312px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
+            <li>
+              <span>{{ abouts }}</span>
+            </li>
+          </div>
+        </section>
 
-    <div class="btn-section gap-36">
-      <a [href]="live" target="_blank" rel="noopener noreferrer">
-        <button class="btn-light josefin-sans">Live Test</button>
-      </a>
-      <a [href]="link" target="_blank" rel="noopener noreferrer">
-        <button class="btn-dark blue josefin-sans">GitHub</button>
-      </a>
+        <section class="project-description-section gap-36">
+          <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
+
+          <div class="project-description">
+            <div class="ellipse-resp">
+              <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
+              <p>{{ "projects.organization" | translate }}</p>
+            </div>
+
+            <li>
+              <span>{{ organization }}</span>
+            </li>
+          </div>
+        </section>
+
+        <section class="project-description-section gap-36">
+          <img class="ellipse-full-screen" src="assets/img/ellipse.png" alt="Ellipse">
+
+          <div class="project-description">
+            <div class="ellipse-resp">
+              <img class="d-none" src="assets/img/ellipse.png" alt="Ellipse">
+              <p> {{ "projects.groupwork" | translate }} </p>
+            </div>
+
+            <li>
+              <span>{{ groupwork }}</span>
+            </li>
+          </div>
+        </section>
+      </ul>
+
+      <div class="live-test-resp">
+        <a [href]="live" target="_blank" rel="noopener noreferrer">
+          <button class="btn-light josefin-sans">Live Test</button>
+        </a>
+        <a [href]="link" target="_blank" rel="noopener noreferrer">
+          <button class="btn-dark blue josefin-sans">GitHub</button>
+        </a>
+      </div>
     </div>
-  </div>
-</div>
+
+    <div class="project-test-section">
+      <span>{{ "projects.technologies" | translate }}</span>
+
+      <div class="technologies-img" [innerHTML]="technologies"></div>
+
+      <img [style.width]="'450px'" [style.height]="'260px'" [style.borderRadius]="'30px'" [src]="image" [alt]="title">
+
+      <div class="btn-section gap-36">
+        <a [href]="live" target="_blank" rel="noopener noreferrer">
+          <button class="btn-light josefin-sans">Live Test</button>
+        </a>
+        <a [href]="link" target="_blank" rel="noopener noreferrer">
+          <button class="btn-dark blue josefin-sans">GitHub</button>
+        </a>
+      </div>
+    </div>
+    </div>
+</section>

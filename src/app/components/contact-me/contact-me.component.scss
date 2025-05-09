@@ -4,6 +4,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
   position: relative;
 
   .headline {
@@ -34,7 +35,10 @@
 
     .text {
       width: 50%;
-      text-align: center;
+
+      @include respond(large) {
+        text-align: center;
+      }
     }
 
     .icon-text {
@@ -62,7 +66,7 @@
     flex-direction: column;
     gap: 15px;
     justify-content: center;
-    width: 60%;
+    width: 60vw;
 
     .message {
       textarea::placeholder {

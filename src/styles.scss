@@ -14,8 +14,13 @@ html {
 
 body {
     background-color: rgba(38, 46, 52, 1);
-    overflow-x: hidden;
     margin: 0;
+    overflow-x: hidden;
+}
+
+.width-limit {
+    margin: 80px auto 0 auto;
+    max-width: 1440px;
 }
 
 .josefin-sans {
@@ -123,7 +128,7 @@ body {
         cursor: pointer;
         font-family: 'JosefinSans';
         padding: 10px;
-        
+
         &:disabled {
             background-image: url('/assets/img/ellipse-menu.png');
             color: rgba(248, 245, 236, 1);
@@ -146,7 +151,7 @@ body {
 .scroll-arrow {
     border-radius: 20px;
     cursor: pointer;
-    
+
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
