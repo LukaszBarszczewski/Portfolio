@@ -19,4 +19,8 @@ export class HeroSectionComponent {
   toggleLanguage() {
     this.translate.use( this.translate.currentLang === "en" ? "de" : "en");
   }
+
+  scrollToBottom(): void {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
 }

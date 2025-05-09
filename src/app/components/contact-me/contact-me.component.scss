@@ -4,6 +4,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .headline {
     text-align: center;
@@ -211,6 +212,21 @@
     @include respond(small) {
       align-items: flex-start;
       width: 80%;
+    }
+  }
+
+  .arrow-up {
+    position: absolute;
+    right: 15%;
+
+    @include respond(medium) {
+      display: none;
+    }
+  }
+
+  @include respond(medium) {
+    .d-none {
+      display: block;
     }
   }
 }
