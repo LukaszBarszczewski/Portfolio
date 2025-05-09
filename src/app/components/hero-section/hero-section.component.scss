@@ -134,11 +134,21 @@
         }
     }
 
-    .menu-resp {
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      .menu-resp {
+        animation: fadeIn 1s ease;
         display: flex;
         flex-direction: column;
         gap: 24px;
-    }
+      }
 
     @include respond(large) {
         flex-direction: column;
