@@ -8,7 +8,14 @@ import { TranslatePipe, TranslateService } from "@ngx-translate/core";
   styleUrl: './hero-section.component.scss'
 })
 export class HeroSectionComponent {
-  constructor(public translate: TranslateService){}
+    constructor(public translate: TranslateService) {
+    const savedLang = localStorage.getItem('lang');
+    const defaultLang = 'de';
+
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang(defaultLang);
+    this.translate.use(savedLang ?? defaultLang);
+  }
 
   menuOpen = false;
 
@@ -16,8 +23,10 @@ export class HeroSectionComponent {
     this.menuOpen = !this.menuOpen;
   }
 
-  toggleLanguage() {
-    this.translate.use( this.translate.currentLang === "en" ? "de" : "en");
+   toggleLanguage() {
+    const nextLang = this.translate.currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(nextLang);
+    localStorage.setItem('lang', nextLang);
   }
 
   scrollToBottom(): void {
