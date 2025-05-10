@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
+import { MenuBarComponent } from '../menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-hero-section',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, MenuBarComponent],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })

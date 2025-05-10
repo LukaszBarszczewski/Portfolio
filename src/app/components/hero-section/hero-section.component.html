@@ -1,68 +1,77 @@
-<section class="hero-section width-limit">
-    <div class="d-none logo-responsive">
-        <div>
-            <img src="assets/img/logo-light.png" alt="Logo">
+<div class="hero-section-and-menu-bar">
+    <section class="hero-section">
+        <div class="d-none logo-responsive">
+            <div>
+                <img src="assets/img/logo-light.png" alt="Logo">
 
-            <div class="logo-bottom">
-                <span class="creme-white anta">L.Barszczewski</span>
-                <p class="blue josefin-sans">developer<p>
-            </div>
-        </div>
-
-        <img class="hamburger-menu" (click)="unwrapHamburgerMenu()" src="assets/img/hamburger-menu.png" alt="">
-    </div>
-
-    <section class="foto-section">
-        <div class="profile-wrapper">
-            <div id="profile-pic" class="profile-pic">
-                @if (menuOpen) {
-                <div class="menu-resp">
-                    <div class="menu-button josefin-sans"><a href="#why-me">{{ "nav.why-me" | translate }}</a></div>
-                    <div class="menu-button josefin-sans"><a href="#skills">Skills</a></div>
-                    <div class="menu-button josefin-sans"><a href="#projects">{{ "nav.projects" | translate }}</a></div>
-                    <div class="menu-button josefin-sans"><a href="#contact">{{ "nav.contact" | translate }}</a></div>
-
-                    <div class="menu-bar-buttons-switch-language">
-                        <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'de'" id="de">DE</button>
-                        <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'en'" id="en">EN</button>
-                    </div>
-                </div>
-                } @else {
-                <img src="assets/img/profile-pic.png" alt="Profilbild">
-                }
-            </div>
-
-            <img src="assets/img/bg-shape.png" alt="Background Shape">
-        </div>
-    </section>
-
-    <section class="introduction">
-        <section class="d-flex-column-center gap-36">
-            <div class="logo-and-links">
-                <div class="d-flex-column-center logo-high-resolution">
-                    <img src="assets/img/logo-light.png" alt="Logo">
-
-                    <div class="logo-bottom d-flex-column-center">
-                        <span class="creme-white anta">L.Barszczewski</span>
-                        <p class="blue josefin-sans">developer</p>
-                    </div>
+                <div class="logo-bottom">
+                    <span class="creme-white anta">L.Barszczewski</span>
+                    <p class="blue josefin-sans">developer
+                    <p>
                 </div>
             </div>
 
-            <div class="d-flex-column-center links">
-                <a href="#contact"><img src="assets/img/email-blue.png" alt="Email"></a>
-                <a href="https://github.com/LukaszBarszczewski" target="_blank"><img src="assets/img/github-blue.png"
-                        alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/lukasz-barszczewski-182685328/" target="_blank"><img
-                        src="assets/img/linkedin-blue.png" alt="LinkedIn"></a>
-            </div>
+            <img class="hamburger-menu" (click)="unwrapHamburgerMenu()" src="assets/img/hamburger-menu.png" alt="">
+        </div>
 
-            <div class="name-section creme-white">
-                <span class="anta name">Lukasz <br> Barszczewski</span>
-                <span class="josefin-sans function">{{ 'hero.job' | translate }}</span>
-            </div>
+        <section class="foto-section">
+            <div class="profile-wrapper">
+                <div id="profile-pic" class="profile-pic">
+                    @if (menuOpen) {
+                    <div class="menu-resp">
+                        <div class="menu-button josefin-sans"><a href="#why-me">{{ "nav.why-me" | translate }}</a></div>
+                        <div class="menu-button josefin-sans"><a href="#skills">Skills</a></div>
+                        <div class="menu-button josefin-sans"><a href="#projects">{{ "nav.projects" | translate }}</a>
+                        </div>
+                        <div class="menu-button josefin-sans"><a href="#contact">{{ "nav.contact" | translate }}</a>
+                        </div>
 
-            <img class="scroll-arrow" (click)="scrollToBottom()" src="assets/img/arrow-down.png" alt="Arrow Down">
+                        <div class="menu-bar-buttons-switch-language">
+                            <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'de'"
+                                id="de">DE</button>
+                            <button (click)="toggleLanguage()" [disabled]="this.translate.currentLang === 'en'"
+                                id="en">EN</button>
+                        </div>
+                    </div>
+                    } @else {
+                    <img src="assets/img/profile-pic.png" alt="Profilbild">
+                    }
+                </div>
+
+                <img src="assets/img/bg-shape.png" alt="Background Shape">
+            </div>
+        </section>
+
+        <section class="introduction">
+            <section class="d-flex-column-center gap-36">
+                <div class="logo-and-links">
+                    <div class="d-flex-column-center logo-high-resolution">
+                        <img src="assets/img/logo-light.png" alt="Logo">
+
+                        <div class="logo-bottom d-flex-column-center">
+                            <span class="creme-white anta">L.Barszczewski</span>
+                            <p class="blue josefin-sans">developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex-column-center links">
+                    <a href="#contact"><img src="assets/img/email-blue.png" alt="Email"></a>
+                    <a href="https://github.com/LukaszBarszczewski" target="_blank"><img
+                            src="assets/img/github-blue.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/lukasz-barszczewski-182685328/" target="_blank"><img
+                            src="assets/img/linkedin-blue.png" alt="LinkedIn"></a>
+                </div>
+
+                <div class="name-section creme-white">
+                    <span class="anta name">Lukasz <br> Barszczewski</span>
+                    <span class="josefin-sans function">{{ 'hero.job' | translate }}</span>
+                </div>
+
+                <img class="scroll-arrow" (click)="scrollToBottom()" src="assets/img/arrow-down.png" alt="Arrow Down">
+            </section>
         </section>
     </section>
-</section>
+</div>
+
+<app-menu-bar></app-menu-bar>

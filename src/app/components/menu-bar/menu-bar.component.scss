@@ -3,6 +3,7 @@
 
 .menu-bar {
     background-color: rgba(137, 188, 217, 1);
+    min-height: 11.5vh;
     position: sticky;
     top: 0;
     width: 101vw;
@@ -16,6 +17,8 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto 0 auto;
+        max-width: 1440px;
         padding: 16px 109px;
 
         .menu-system-titles {

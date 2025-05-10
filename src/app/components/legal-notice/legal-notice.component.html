@@ -1,52 +1,42 @@
 <app-menu-bar></app-menu-bar>
 
-<div class="logo">
-    <img src="assets/img/logo-light.png" alt="Logo">
+<section class="legal-notice width-limit">
+  <h1 class="headline blue anta">{{ 'legal-notice.headline' | translate }}</h1>
 
-    <div class="logo-bottom d-flex-column-center">
-        <span class="creme-white anta">L.Barszczewski</span>
-        <p class="blue josefin-sans"> {{ "hero.title" | translate }} </p>
-    </div>
+  <h2 class="creme-white anta"> {{ "legal-notice.title" | translate }} </h2>
+  <p class="creme-white josefin-sans">
+    <strong>Lukasz Barszczewski</strong><br>
+    Stuttbergstraße 31<br>
+    Wuppertal, 42107 Germany<br>
+    <a class="creme-white" href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a><br>
 
-</div>
+  </p>
 
-<section class="legal-notice">
-    <h1 class="headline blue anta">{{ 'legal-notice.headline' | translate }}</h1>
+  <h2 class="creme-white anta">{{ 'legal-notice.disclaimer.title' | translate }}</h2>
+  <p class="creme-white josefin-sans">
+    {{ 'legal-notice.disclaimer.content' | translate }}
+  </p>
 
-    <h2 class="creme-white anta"> {{ "legal-notice.title" | translate }} </h2>
-    <p class="creme-white josefin-sans">
-        <strong>Lukasz Barszczewski</strong><br>
-        Stuttbergstraße 31<br>
-        Wuppertal, 42107 Germany<br>
-        <a class="creme-white" href="mailto:lukasz.barszczewski@yahoo.com">lukasz.barszczewski&commat;yahoo.com</a><br>
-        
-    </p>
+  <h2 class="creme-white anta">{{ 'legal-notice.external-links.title' | translate }}</h2>
+  <p class="creme-white josefin-sans">
+    {{ 'legal-notice.external-links.content' | translate }}
+  </p>
 
-    <h2 class="creme-white anta">{{ 'legal-notice.disclaimer.title' | translate }}</h2>
-    <p class="creme-white josefin-sans">
-      {{ 'legal-notice.disclaimer.content' | translate }}
-    </p>
+  <h2 class="creme-white anta">{{ 'legal-notice.copyright.title' | translate }}</h2>
+  <p class="creme-white josefin-sans">
+    {{ 'legal-notice.copyright.content' | translate }}
+  </p>
 
-    <h2 class="creme-white anta">{{ 'legal-notice.external-links.title' | translate }}</h2>
-    <p class="creme-white josefin-sans">
-      {{ 'legal-notice.external-links.content' | translate }}
-    </p>
+  <h2 class="creme-white anta">{{ 'legal-notice.data-protection.title' | translate }}</h2>
+  <p class="creme-white josefin-sans">
+    {{ 'legal-notice.data-protection.content.start' | translate }}
+    <a (click)="navigateToPrivacy()"> {{ 'legal-notice.data-protection.content.anchor' | translate }} </a>
+    {{ 'legal-notice.data-protection.content.end' | translate }}
+  </p>
 
-    <h2 class="creme-white anta">{{ 'legal-notice.copyright.title' | translate }}</h2>
-    <p class="creme-white josefin-sans">
-      {{ 'legal-notice.copyright.content' | translate }}
-    </p>
-
-    <h2 class="creme-white anta">{{ 'legal-notice.data-protection.title' | translate }}</h2>
-    <p class="creme-white josefin-sans">
-      {{ 'legal-notice.data-protection.content.start' | translate }}
-      <a (click)="navigateToPrivacy()"> {{ 'legal-notice.data-protection.content.anchor' | translate }} </a>
-      {{ 'legal-notice.data-protection.content.end' | translate }}
-    </p>
-
-    <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">
-        {{ 'legal-notice.buttons.back' | translate }}
-      </button>
+  <button style="margin-top: 32px;" class="btn-dark blue josefin-sans" (click)="navigateBack()">
+    {{ 'legal-notice.buttons.back' | translate }}
+  </button>
 </section>
 
 <app-footer></app-footer>

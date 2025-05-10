@@ -6,8 +6,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 64px 72px 64px;
     text-align: center;
+    min-height: 100vh;
+    margin: 0 64px 80px 64px;
     
     a {
         text-decoration: underline;
@@ -18,11 +19,3 @@
         }
     }
 }
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-  }

@@ -1,179 +1,192 @@
 @import '../../../styles.scss';
 
 
-.hero-section {
-    align-items: center;
+.hero-section-and-menu-bar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: end;
+    margin: 0 auto 0 auto;
+    max-width: 1440px;
+    min-height: 88.5vh;
+    width: 100vw;
 
-    .logo-responsive {
-        .hamburger-menu {
-            height: 32px;
-            width: 32px;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        @include respond(large) {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 64px;
-            width: 80%;
-        }
-    }
-
-    .d-none {
-        @include respond(large) {
-            display: flex;
-        }
-    }
-
-    .foto-section {
+    .hero-section {
         align-items: center;
         display: flex;
         justify-content: center;
-        width: 50%;
+        margin-bottom: 80px;
 
-        .profile-wrapper {
-            display: inline-block;
-            position: relative;
-
-            img {
-                display: block;
-            }
-
-            .profile-pic {
-                left: 50%;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%, -50%);
-
-                img {
-                    width: 600px;
-
-                    @include respond(large) {
-                        clip-path: ellipse(59% 56% at 47% 48%);
-                        margin-bottom: 120px;
-                        width: 550px;
-                    }
-
-                    @include respond(medium) {
-                        margin-bottom: 90px;
-                        width: 450px;
-                    }
-
-                    @include respond(small) {
-                        clip-path: ellipse(55% 55% at 48% 51%);
-                        margin-bottom: 78px;
-                        width: 280px;
-                    }
-                }
-            }
-        }
-
-        @include respond(medium) {
-            img {
-                width: 480px;
-            }
-        }
-
-        @include respond(small) {
-            img {
-                width: 280px;
-            }
-        }
-    }
-
-    .introduction {
-        position: relative;
-        width: 50%;
-
-        .links {
-            display: flex;
-            gap: 8px;
-            position: absolute;
-            right: 88px;
-            top: 0px;
-
-            img {
-                border-radius: 18px;
+        .logo-responsive {
+            .hamburger-menu {
+                height: 32px;
+                width: 32px;
 
                 &:hover {
-                    box-shadow: 0 0 16px rgba(137, 188, 217, 0.5);
                     cursor: pointer;
-                    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
                 }
             }
 
             @include respond(large) {
-                display: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 64px 0 64px 0;
+                width: 80%;
             }
         }
 
-        .name {
-            font-size: 88px;
-            margin-bottom: 16px;
-
-            @include respond(medium) {
-                font-size: 48px;
-            }
-
-            @include respond(small) {
-                font-size: 32px;
+        .d-none {
+            @include respond(large) {
+                display: flex;
             }
         }
 
-        .function {
-            font-size: 40px;
-
-            @include respond(medium) {
-                font-size: 24px;
-            }
-
-            @include respond(small) {
-                font-size: 16px;
-            }
-        }
-
-
-        .name-section {
+        .foto-section {
             align-items: center;
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            text-align: center;
-        }
+            width: 50%;
 
-        .logo-high-resolution {
-            display: flex;
+            .profile-wrapper {
+                display: inline-block;
+                position: relative;
 
-            @include respond(large) {
-                display: none;
+                img {
+                    display: block;
+                }
+
+                .profile-pic {
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+
+                    img {
+                        width: 600px;
+
+                        @include respond(large) {
+                            clip-path: ellipse(59% 56% at 47% 48%);
+                            margin-bottom: 120px;
+                            width: 550px;
+                        }
+
+                        @include respond(medium) {
+                            margin-bottom: 90px;
+                            width: 450px;
+                        }
+
+                        @include respond(small) {
+                            clip-path: ellipse(55% 55% at 48% 51%);
+                            margin-bottom: 78px;
+                            width: 280px;
+                        }
+                    }
+                }
+            }
+
+            @include respond(medium) {
+                img {
+                    width: 480px;
+                }
+            }
+
+            @include respond(small) {
+                img {
+                    width: 280px;
+                }
             }
         }
-    }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
+        .introduction {
+            position: relative;
+            width: 50%;
+
+            .links {
+                display: flex;
+                gap: 8px;
+                position: absolute;
+                right: 88px;
+                top: 0px;
+
+                img {
+                    border-radius: 18px;
+
+                    &:hover {
+                        box-shadow: 0 0 16px rgba(137, 188, 217, 0.5);
+                        cursor: pointer;
+                        transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+                    }
+                }
+
+                @include respond(large) {
+                    display: none;
+                }
+            }
+
+            .name {
+                font-size: 88px;
+                margin-bottom: 16px;
+
+                @include respond(medium) {
+                    font-size: 48px;
+                }
+
+                @include respond(small) {
+                    font-size: 32px;
+                }
+            }
+
+            .function {
+                font-size: 40px;
+
+                @include respond(medium) {
+                    font-size: 24px;
+                }
+
+                @include respond(small) {
+                    font-size: 16px;
+                }
+            }
+
+
+            .name-section {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .logo-high-resolution {
+                display: flex;
+
+                @include respond(large) {
+                    display: none;
+                }
+            }
         }
 
-        to {
-            opacity: 1;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-    }
 
-    .menu-resp {
-        animation: fadeIn 1s ease;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+        .menu-resp {
+            animation: fadeIn 1s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
 
-    @include respond(large) {
-        flex-direction: column;
-        text-align: center;
+        @include respond(large) {
+            flex-direction: column;
+            margin-bottom: 0;
+            text-align: center;
+        }
     }
 }
