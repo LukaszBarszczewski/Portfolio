@@ -2,13 +2,12 @@
 
 
 .legal-notice {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
     text-align: center;
-    min-height: 100vh;
-    margin: 0 64px 80px 64px;
     
     a {
         text-decoration: underline;
