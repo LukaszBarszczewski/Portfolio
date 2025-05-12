@@ -79,9 +79,13 @@ body {
 }
 
 .btn-dark {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
     background: none;
     border: 1px solid rgba(137, 188, 217, 1);
     border-radius: 30px;
+    opacity: 0;
     padding: 13px 30px;
     width: 134px;
 
@@ -92,9 +96,13 @@ body {
 }
 
 .btn-light {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
     background: rgba(137, 188, 217, 1);
     border: none;
     border-radius: 30px;
+    opacity: 0;
     padding: 13px 30px;
     text-align: center;
     text-decoration: none;
@@ -104,6 +112,19 @@ body {
         background: rgba(248, 245, 236, 1);
         cursor: pointer;
     }
+}
+
+.visible-button {
+    animation-name: btnLoad;
+}
+
+@keyframes btnLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-button {

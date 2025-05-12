@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { MenuBarComponent } from '../menu-bar/menu-bar.component';
 
@@ -9,7 +9,7 @@ import { MenuBarComponent } from '../menu-bar/menu-bar.component';
   styleUrl: './hero-section.component.scss'
 })
 export class HeroSectionComponent {
-    constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     const savedLang = localStorage.getItem('lang');
     const defaultLang = 'de';
 
@@ -24,7 +24,7 @@ export class HeroSectionComponent {
     this.menuOpen = !this.menuOpen;
   }
 
-   toggleLanguage() {
+  toggleLanguage() {
     const nextLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(nextLang);
     localStorage.setItem('lang', nextLang);
@@ -32,5 +32,21 @@ export class HeroSectionComponent {
 
   scrollToBottom(): void {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+
+  @ViewChildren('nameRef') buttons!: QueryList<ElementRef>;
+
+  ngAfterViewInit(): void {
+    this.buttons.forEach((btn) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          btn.nativeElement.classList.add('visible-name');
+        } else {
+          btn.nativeElement.classList.remove('visible-name');
+        }
+      }, { threshold: 0.1 });
+
+      observer.observe(btn.nativeElement);
+    });
   }
 }

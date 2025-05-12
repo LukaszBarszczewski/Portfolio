@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -19,5 +19,21 @@ export class ProjectCardComponent {
 
   openLink() {
     window.open('https://www.linkedin.com/in/lukasz-barszczewski-182685328/');
+  }
+
+  @ViewChildren('buttonRef') buttons!: QueryList<ElementRef>;
+
+  ngAfterViewInit(): void {
+    this.buttons.forEach((btn) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          btn.nativeElement.classList.add('visible-button');
+        } else {
+          btn.nativeElement.classList.remove('visible-button');
+        }
+      }, { threshold: 0.1 });
+
+      observer.observe(btn.nativeElement);
+    });
   }
 }

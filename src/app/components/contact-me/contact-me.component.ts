@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
@@ -72,4 +72,20 @@ export class ContactMeComponent {
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+    @ViewChildren('buttonRef') buttons!: QueryList<ElementRef>;
+
+ngAfterViewInit(): void {
+  this.buttons.forEach((btn) => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        btn.nativeElement.classList.add('visible-button');
+      } else {
+          btn.nativeElement.classList.remove('visible-button');
+        }
+    }, { threshold: 0.1 });
+
+    observer.observe(btn.nativeElement);
+  });
+}
 }

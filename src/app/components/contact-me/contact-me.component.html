@@ -52,7 +52,7 @@
             </div>
 
             <div [style]="{ display: 'flex', justifyContent: 'flex-end' }">
-                <button class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">{{ "contact.button" | translate }}</button>
+                <button #buttonRef class="btn-dark blue josefin-sans" type="submit" [disabled]="isDisabled">{{ "contact.button" | translate }}</button>
             </div>
         </div>
     </form>
