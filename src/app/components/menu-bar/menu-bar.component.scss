@@ -8,7 +8,6 @@
   width: 101vw;
   z-index: 9999;
   transform: translateY(-100%);
-  opacity: 0;
   animation: slideDown 1s ease-out forwards;
 
   @include respond(large) {
@@ -33,11 +32,9 @@
 
 @keyframes slideDown {
   from {
-    transform: translateY(-100%);
-    opacity: 0;
+    transform: translateY(-80%);
   }
   to {
     transform: translateY(0);
-    opacity: 1;
   }
 }
