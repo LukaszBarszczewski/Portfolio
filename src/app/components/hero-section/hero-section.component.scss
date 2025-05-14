@@ -176,7 +176,10 @@
             }
 
             .logo-high-resolution {
+                animation: slideDown 1s ease-out forwards;
                 display: flex;
+                opacity: 0;
+                transform: translate(-50%, -50%);
 
                 @include respond(large) {
                     display: none;
@@ -206,5 +209,17 @@
             margin-bottom: 0;
             text-align: center;
         }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(0, -50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
     }
 }
