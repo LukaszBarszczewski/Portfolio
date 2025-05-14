@@ -151,14 +151,14 @@
 
             .name-section {
                 align-items: center;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 opacity: 0;
                 text-align: center;
-                animation-fill-mode: forwards;
-                animation-duration: 4s;
-                animation-timing-function: ease-out;
             }
 
             .visible-name {
