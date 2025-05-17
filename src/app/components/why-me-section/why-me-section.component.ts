@@ -8,19 +8,27 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './why-me-section.component.scss'
 })
 export class WhyMeSectionComponent {
-@ViewChildren('buttonRef') buttons!: QueryList<ElementRef>;
+  @ViewChildren('buttonRef') buttons!: QueryList<ElementRef>;
+  @ViewChildren('pinRef') pins!: QueryList<ElementRef>;
+  @ViewChildren('nameRef') names!: QueryList<ElementRef>;
 
-ngAfterViewInit(): void {
-  this.buttons.forEach((btn) => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        btn.nativeElement.classList.add('visible-button');
-      } else {
-          btn.nativeElement.classList.remove('visible-button');
+  ngAfterViewInit(): void {
+    const options = { threshold: 0.1 };
+
+    const animate = (el: ElementRef, className: string) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          el.nativeElement.classList.add(className);
+        } else {
+          el.nativeElement.classList.remove(className);
         }
-    }, { threshold: 0.1 });
+      }, options);
 
-    observer.observe(btn.nativeElement);
-  });
-}
+      observer.observe(el.nativeElement);
+    };
+
+    this.buttons.forEach((btn) => animate(btn, 'visible-button'));
+    this.pins.forEach((pin) => animate(pin, 'visible-pin'));
+    this.names.forEach((name) => animate(name, 'visible-name'));
+  }
 }

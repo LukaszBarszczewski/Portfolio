@@ -5,17 +5,17 @@
 
     <div class="why-me-info josefin-sans">
         <div class="location-info creme-white">
-            <img class="pin" src="assets/img/pin.png" alt="Pin">
-            <img class="d-none" src="assets/img/no-bg-pin.png" alt="Pin">
+            <img class="pin" #pinRef src="assets/img/pin.png" alt="Pin">
+            <img class="d-none" #pinRef src="assets/img/no-bg-pin.png" alt="Pin">
 
-            <span>
-                <p class="blue">{{ "why-me.iam" | translate }} <p> {{ "why-me.location" | translate }} Wuppertal..|
-            </span>
+            <p>
+                <span class="blue">{{ "why-me.iam" | translate }}</span>
+                <span #nameRef>{{ "why-me.location" | translate }} Wuppertal..|</span>
+            </p>
         </div>
 
         <div class="about-me-text half creme-white">
             <span>{{ "why-me.description" | translate }}</span>
-
             <a href="#contact"><button #buttonRef class="btn-dark blue josefin-sans">{{ "why-me.cta" | translate }}</button></a>
         </div>
     </div>

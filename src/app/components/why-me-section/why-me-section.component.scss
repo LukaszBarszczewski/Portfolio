@@ -30,24 +30,72 @@
             font-size: 28px;
             justify-content: end;
 
+            @keyframes fallDown {
+                0% {
+                    transform: translateY(-50px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            .pin,
+            .d-none {
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: none;
+
+                &.visible-pin {
+                    animation: fallDown 2s ease-out forwards;
+                }
+            }
+
             img {
                 height: 64px;
                 width: 74px;
             }
 
-            span {
+            p {
                 align-items: center;
                 display: flex;
                 justify-content: center;
                 gap: 4px;
             }
 
+            span {
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+            }
+
+            @include respond(xlarge) {
+                gap: 16px;
+
+                p {
+                    flex-direction: column;
+                }
+            }
+
+            @include respond(large) {
+                p {
+                    flex-direction: row;
+                }
+            }
+
             @include respond(medium) {
                 font-size: 24px;
+
+                p {
+                    flex-direction: column;
+                }
             }
 
             @include respond(small) {
                 font-size: 18px;
+                gap: 0;
 
                 .pin {
                     display: none;
